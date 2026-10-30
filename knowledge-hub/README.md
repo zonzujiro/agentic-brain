@@ -7,3 +7,9 @@ for one reference. A flat `<topic>.md` is sufficient; create a durable subtree
 only after resolving its ownership and impact. Existing subtree conventions take
 precedence over inventing a universal metadata schema. Keep active project state,
 operating rules and delivered-feature snapshots with their respective owners.
+
+For a product overview, use the specialized
+[product-context writer](../skills-hub/hb-skills/hb-create-product-context/SKILL.md)
+and its `<scope>-overview.md` target. The general reference writer routes that
+request to this specialized writer rather than maintaining a second overview.
+No product/UX/BA folder taxonomy is required.

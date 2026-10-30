@@ -14,8 +14,9 @@ Markdown targets, source footnotes and Decision structure/lineage, and rejects s
 markers. It does not validate heading anchors, every Markdown syntax, remote URLs,
 secret absence, provenance rights, source truth, or connector behavior.
 
-The fuller gate profiles, semantic overlap review, and host enforcement remain
-pending migration. They are not silently satisfied by this smaller check.
+The semantic and producer controllers support bounded agent review, separately
+from these structural checks. Fuller gate profiles and automatic agent-host
+enforcement remain pending; local Git checks do not satisfy those requirements.
 
 ## User-feedback exemption
 

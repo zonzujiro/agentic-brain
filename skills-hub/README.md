@@ -1,32 +1,42 @@
 # Reusable workflows
 
-Workflow source lives under `hb-skills/{skill}/`. Read a skill in this checkout
-and resolve repository paths from this repository root. Copying a skill directory
-alone does not carry its governance dependencies. No host discovery or hooks are
-installed; this increment supports explicitly reading the workflow instructions.
+Canonical source lives under `hb-skills/{skill}/`. Repository-local Codex links
+under `.agents/skills/` point to those sources without duplicating instructions.
+Resolve repository paths from this checkout; bundled reference paths are relative
+to their skill. Copying a skill alone omits its governance dependencies.
 
-## Adapted source
+## Adapted workflows
 
-- [Resolve artifact write](hb-skills/hb-resolve-artifact-write/SKILL.md): read-only
-  routing before a material write. Determines owner, path, maturity, existing-file
-  handling, and remaining checks. It neither writes artifacts nor validates their
-  truth. Its contract is [artifact write boundary](../governance/artifacts/artifact-write-boundary.md).
+| Workflow | Responsibility |
+|---|---|
+| [Bootstrap](hb-skills/hb-bootstrap/SKILL.md) | Check runtime and local readiness; optional Git checks |
+| [Start project](hb-skills/hb-start-project/SKILL.md) | Minimal project context and idempotent repair |
+| [Onboard](hb-skills/hb-onboard/SKILL.md) | Hands-on fictional exercise in temporary storage |
+| [Resolve artifact write](hb-skills/hb-resolve-artifact-write/SKILL.md) | Read-only owner, path and readiness resolution |
+| [Change impact](hb-skills/hb-change-impact/SKILL.md) | Candidate discovery, producer conflicts and consumer review |
+| [Record decision](hb-skills/hb-add-decision/SKILL.md) | Stable choice, evidence, rationale and lineage |
+| [Review decision](hb-skills/hb-review-decision/SKILL.md) | Read-only challenge of choice and consequences |
+| [Resolve decision impact](hb-skills/hb-resolve-decision-impact/SKILL.md) | Reviewed downstream entries and their operational owners |
+| [Write shared knowledge](hb-skills/hb-add-knowledge-hub-doc/SKILL.md) | One general reusable reference |
+| [Create product context](hb-skills/hb-create-product-context/SKILL.md) | Specialized product overview, not a second general writer |
+| [Create feature knowledge](hb-skills/hb-create-feature-doc/SKILL.md) | Confirmed delivered behavior and its limitations |
+| [Archive project](hb-skills/hb-archive-project/SKILL.md) | Preserve one delivered project, then invoke feature writer |
+| [Adopt skill](hb-skills/hb-adopt-skill/SKILL.md) | Reviewed package adoption without silent installation |
+| [Review skill](hb-skills/hb-review-skill/SKILL.md) | Triggers, dependencies, outputs and ownership review |
+| [Semantic project audit](hb-skills/hb-semantic-project-audit/SKILL.md) | Bounded two-stage active/shipped comparison |
 
-- [Change impact](hb-skills/hb-change-impact/SKILL.md): local explicit-reference
-  discovery plus agent review of claims, owners, producers and affected consumers.
-- [Review skill](hb-skills/hb-review-skill/SKILL.md): read-only semantic review of
-  a skill's triggers, dependencies, outputs, ownership and hidden assumptions.
-- [Write shared knowledge](hb-skills/hb-add-knowledge-hub-doc/SKILL.md): one
-  supported reusable reference with applicability and freshness limits.
+The two `hb-create-*` writers replace their source `hb-pm-create-*` names; no PM
+role is required. Source paths and transformations remain in the extraction manifest.
 
-- [Record a decision](hb-skills/hb-add-decision/SKILL.md): one stable record of
-  an open or chosen answer, its evidence, alternatives and lineage.
-- [Review a decision](hb-skills/hb-review-decision/SKILL.md): distinct read-only
-  review of the answer, support, contradictions and operational consequences.
-- [Resolve decision impact](hb-skills/hb-resolve-decision-impact/SKILL.md): inspect
-  confirmed downstream entries and update only those actually reviewed.
+## Mechanics and limits
 
-The other eight candidates remain pending. See the
-[scope](../projects-in-progress/agentic-brain/scope.md) and
-[tasks](../projects-in-progress/agentic-brain/tasks.md). Host integration and model
-behavior evaluations remain separate work; a source file is not an installed hook.
+Semantic and producer controllers construct bounded evidence, validate response
+shape and citations, bind results to inputs, and clean their temporary sessions.
+The active agent still judges meaning. No evaluation kit or paid CI model run is
+required. Git checks are optional local working-tree checks, not agent tool hooks.
+
+Codex CLI discovery of all fifteen skills and an explicit routing invocation were
+verified on 30.10.2026. This does not establish universal host compatibility,
+connector observation or automatic enforcement. See the
+[mechanics inventory](../projects-in-progress/agentic-brain/t2-mechanics.md) and
+[remaining tasks](../projects-in-progress/agentic-brain/tasks.md).

@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
 
-import { validateDecisionRecord } from "../validate_decisions.mjs";
+import { validateDecisionRecord, decisionScopes } from "../validate_decisions.mjs";
 
 import { parseFrontmatter } from "../lib/markdown/frontmatter.mjs";
 
@@ -105,21 +105,19 @@ export function buildDecisionCatalog(targetDir) {
   // Reverse lineage can originate in another project; the catalog remains scoped
   // to this project's entries while inspecting sibling metadata for references.
   const relationshipSources = [...entries];
-  const projectsRoot = path.dirname(resolvedTargetDir);
-  if (path.basename(projectsRoot) === "projects-in-progress") {
-    for (const project of fs.readdirSync(projectsRoot, {withFileTypes: true})) {
-      const sibling = path.join(projectsRoot, project.name);
-      if (!project.isDirectory() || sibling === resolvedTargetDir) continue;
-      const dir = path.join(sibling, "decisions");
-      if (!fs.existsSync(dir) || !fs.lstatSync(dir).isDirectory()) continue;
-      for (const file of fs.readdirSync(dir, {withFileTypes: true})) {
-        if (!file.isFile() || !file.name.endsWith(".md")) continue;
-        const text = stripBom(fs.readFileSync(path.join(dir, file.name), "utf8"));
-        const errors = validateDecisionRecord({markdown: text, filePath: path.join(dir, file.name)});
-        if (errors.length) throw new Error(errors.join("\n"));
-        const meta = parseFrontmatter(text);
-        relationshipSources.push({id: meta.id, relationships: Object.fromEntries(RELATIONSHIP_KEYS.map(key => [key, normalizeArray(meta[key])]))});
-      }
+  let repoRoot = resolvedTargetDir;
+  while (path.dirname(repoRoot) !== repoRoot &&
+    !fs.existsSync(path.join(repoRoot, "projects-in-progress"))) repoRoot = path.dirname(repoRoot);
+  for (const sibling of decisionScopes(repoRoot)) {
+    if (sibling === resolvedTargetDir) continue;
+    const dir = path.join(sibling, "decisions");
+    for (const file of fs.readdirSync(dir, {withFileTypes: true})) {
+      if (!file.isFile() || !file.name.endsWith(".md")) continue;
+      const text = stripBom(fs.readFileSync(path.join(dir, file.name), "utf8"));
+      const errors = validateDecisionRecord({markdown: text, filePath: path.join(dir, file.name)});
+      if (errors.length) throw new Error(errors.join("\n"));
+      const meta = parseFrontmatter(text);
+      relationshipSources.push({id: meta.id, relationships: Object.fromEntries(RELATIONSHIP_KEYS.map(key => [key, normalizeArray(meta[key])]))});
     }
   }
   for (const entry of relationshipSources) {

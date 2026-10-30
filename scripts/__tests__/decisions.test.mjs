@@ -70,3 +70,13 @@ test('project catalog shows reverse supersession from another project', t => {
   assert.deepEqual(validateDecisions(root), []);
   assert.deepEqual(buildDecisionCatalog(project)[0].relationships.superseded_by, ['DEC-new']);
 });
+test('archiving a decision preserves validation and reverse lineage', t => {
+ const {root, project, put} = fixture(t);
+ put('old', record('old')+'\n## Supersession\nReplaced by DEC-new.\n');
+ const other=path.join(root,'projects-in-progress/other/decisions');
+ fs.mkdirSync(other,{recursive:true});fs.writeFileSync(path.join(other,'new.md'),record('new','supersedes:\n  - DEC-old\n'));
+ const archive=path.join(root,'production-features/reader/changes/offline');
+ fs.mkdirSync(path.dirname(archive),{recursive:true});fs.renameSync(project,archive);
+ assert.deepEqual(validateDecisions(root),[]);
+ assert.deepEqual(buildDecisionCatalog(archive)[0].relationships.superseded_by,['DEC-new']);
+});

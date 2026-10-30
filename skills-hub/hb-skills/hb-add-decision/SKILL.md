@@ -15,11 +15,14 @@ between lifecycle folders and never gains a lifecycle status field.
 
 ## Decision contract
 
-The only Decision path is:
+Create active Decision records at:
 
 `projects-in-progress/{project}/decisions/{slug}.md`
 
-The same path is used before and after a choice. Preserve decision-relevant
+The same path is used before and after a choice. Archiving the complete project
+may move it into a delivered-feature root or its `changes/{change}/` packet;
+the ID and internal decision filename stay stable. Validation and catalog
+lineage include those archived scopes. Preserve decision-relevant
 research, audit conclusions, diagrams, and review evidence in the Decision
 itself. Independently reusable material may go only to an already-governed
 project surface outside `decisions/`. If none covers it, run `hb-change-impact`

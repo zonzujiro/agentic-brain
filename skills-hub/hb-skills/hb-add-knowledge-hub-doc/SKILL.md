@@ -134,6 +134,9 @@ If the request is actually:
 then stop and explain the correct canonical surface instead of writing into the
 hub.
 
+For a product-wide overview, use `hb-create-product-context` as the owning writer
+for `<scope>-overview.md`; do not author a competing general reference.
+
 ### 3. Validate subtree scope
 
 Use the current hub README and any existing subtree contract. If the request

@@ -49,12 +49,18 @@ function safeRepoPath(value) {
   return normalized !== "." && normalized !== ".." && !normalized.startsWith("../");
 }
 
-function findDecisionDirectories(projectsRoot) {
-  if (!fs.existsSync(projectsRoot)) return [];
-  return fs.readdirSync(projectsRoot, { withFileTypes: true })
-    .filter((entry) => entry.isDirectory())
-    .map((entry) => path.join(projectsRoot, entry.name, "decisions"))
-    .filter((dir) => fs.existsSync(dir) && fs.lstatSync(dir).isDirectory());
+export function decisionScopes(repoRoot) {
+  const scopes = [];
+  const children = dir => fs.existsSync(dir) && fs.lstatSync(dir).isDirectory()
+    ? fs.readdirSync(dir, {withFileTypes: true}).filter(entry => entry.isDirectory()).map(entry => path.join(dir, entry.name)) : [];
+  scopes.push(...children(path.join(repoRoot, "projects-in-progress")));
+  for (const feature of children(path.join(repoRoot, "production-features"))) {
+    scopes.push(feature, ...children(path.join(feature, "changes")));
+  }
+  return scopes.filter(scope => {
+    const dir = path.join(scope, "decisions");
+    return fs.existsSync(dir) && fs.lstatSync(dir).isDirectory();
+  });
 }
 
 function walk(dir) {
@@ -159,7 +165,7 @@ export function validateDecisionRecord({ markdown, filePath }) {
 export function validateDecisions(repoRoot = process.cwd()) {
   const errors = [];
   const records = [];
-  const decisionsDirs = findDecisionDirectories(path.join(repoRoot, "projects-in-progress"));
+  const decisionsDirs = decisionScopes(repoRoot).map(scope => path.join(scope, "decisions"));
 
   for (const decisionsDir of decisionsDirs) {
     for (const entry of fs.readdirSync(decisionsDir, { withFileTypes: true })) {

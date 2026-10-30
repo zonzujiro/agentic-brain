@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["project_count", "candidate_count", "comparisons", "findings", "cleared_candidates", "coverage_gaps", "notes"],
+  "properties": {
+    "project_count": { "type": "integer", "minimum": 0 },
+    "candidate_count": { "type": "integer", "minimum": 0 },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["projects", "material_similarities", "material_differences", "relationship", "residual_issues", "evidence"],
+        "properties": {
+          "projects": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "string" } },
+          "material_similarities": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "type": "string" } },
+          "material_differences": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "type": "string" } },
+          "relationship": { "type": "string", "enum": ["duplicate", "partial_overlap", "dependency", "layered_scopes", "unrelated", "unclear"] },
+          "residual_issues": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["conflicting_ownership", "undocumented_boundary", "copied_mutable_truth", "none"] } },
+          "evidence": { "type": "array", "minItems": 2, "items": { "type": "object", "additionalProperties": false, "required": ["path", "start_line", "end_line"], "properties": { "path": { "type": "string" }, "start_line": { "type": "integer", "minimum": 1 }, "end_line": { "type": "integer", "minimum": 1 } } } }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["check", "projects", "strength", "confidence", "reason", "evidence", "recommended_action", "human_confirmation_required"],
+        "properties": {
+          "check": { "type": "string", "enum": ["work_identity", "boundary_integrity", "drift_risk"] },
+          "projects": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "string" } },
+          "strength": { "type": "string", "enum": ["established_from_brain", "probable_needs_owner_confirmation", "gap"] },
+          "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+          "reason": { "type": "string" },
+          "evidence": { "type": "array", "minItems": 2, "items": { "type": "object", "additionalProperties": false, "required": ["path", "start_line", "end_line"], "properties": { "path": { "type": "string" }, "start_line": { "type": "integer", "minimum": 1 }, "end_line": { "type": "integer", "minimum": 1 } } } },
+          "recommended_action": { "type": "string" },
+          "human_confirmation_required": { "type": "boolean", "const": true }
+        }
+      }
+    },
+    "cleared_candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["projects", "cleared_checks", "reason", "evidence"],
+        "properties": {
+          "projects": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "string" } },
+          "cleared_checks": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["work_identity", "boundary_integrity", "drift_risk"] } },
+          "reason": { "type": "string" },
+          "evidence": { "type": "array", "minItems": 2, "items": { "type": "object", "additionalProperties": false, "required": ["path", "start_line", "end_line"], "properties": { "path": { "type": "string" }, "start_line": { "type": "integer", "minimum": 1 }, "end_line": { "type": "integer", "minimum": 1 } } } }
+        }
+      }
+    },
+    "coverage_gaps": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}

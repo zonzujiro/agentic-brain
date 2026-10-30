@@ -2,7 +2,7 @@
   "source": "Harmony Brain",
   "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
   "recorded": "30.10.2026",
-  "status": "initial reviewed subset; full migration and publication review pending",
+  "status": "reviewed foundation and T2 core subset; full migration and publication review pending",
   "files": [
     {
       "source_path": "governance/operations/communication.md",
@@ -150,6 +150,125 @@
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "ca3c638afb786741d6b52b659dca8117c684b3fd01bec1176dde0de404086780",
       "adaptation": "Retained local metadata-first retrieval and reverse lineage derivation; removed dependency on notification module by moving shared parser. Validate records before retrieval and include sibling-project references when deriving reverse lineage."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-pm-create-product-context/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-create-product-context/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "8b77febc83458a23f9e129073ef57d27fec9d5fd387dcddc05e3ee6b58a79a2f",
+      "adaptation": "Retained source-first extraction, section coverage, selective follow-up, evidence and anti-fabrication contracts under neutral name; removed company transport, products, prescribed vendor lanes, automatic receipts and unmigrated gate/PR requirements. Use current surface and authorization."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-pm-create-feature-doc/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-create-feature-doc/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "8ad6f5f7271df83b3b55ccba88fdae07591828c3e8c84d52dc0704f6dd830191",
+      "adaptation": "Retained source-first extraction, section coverage, selective follow-up, evidence and anti-fabrication contracts under neutral name; removed company transport, products, prescribed vendor lanes, automatic receipts and unmigrated gate/PR requirements. Use current surface and authorization."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-pm-create-feature-doc/references/feature-knowledge-doc-template.md",
+      "target_path": "skills-hub/hb-skills/hb-create-feature-doc/references/feature-knowledge-doc-template.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c3bbf7a5e69deef255b6251629968edc910789c82f236baa323e971b61a25e17",
+      "adaptation": "Preserved substantive section prompts and evidence checklist; neutralized company examples, dates and platform/service requirements. Clarified authored user intents are not research quotes and optional depth for small projects."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-pm-create-product-context/references/product-overview-template.md",
+      "target_path": "skills-hub/hb-skills/hb-create-product-context/references/product-overview-template.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d25037044a6f309634bf7389b2e0eeb6a2cc4ce4f63dc1db7e7bcfbdead312ab",
+      "adaptation": "Preserved substantive section prompts and evidence checklist; neutralized company examples, dates and platform/service requirements. Clarified authored user intents are not research quotes and optional depth for small projects."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-bootstrap/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-bootstrap/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "a4da8193d0961dfdb339efa5bbefc4b24c3ab7d8f1f233c0f99c309419122baa",
+      "adaptation": "Replaced excluded gateway, registry, role and notification setup with idempotent local runtime/check orientation and optional non-overwriting Git-check installer. No connector or host-discovery claim."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-start-project/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-start-project/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "f1c461ee6a9b64c27e85f62bff32073e4df59b23123a480af60417208cae7db7",
+      "adaptation": "Preserved identity, idempotent repair, semantic project capsule, solution challenge and minimal artifact flow. Removed mandatory organization/domain/notification metadata, planning and excluded handoffs; made brief depth optional and disclosed pending semantic overlap automation."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-adopt-skill/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-adopt-skill/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "8c6656f0360c353e90dd9e2c4059db1a34af5366791a5e3a9c6f496e954391e6",
+      "adaptation": "Retained bounded source adoption, metadata preservation, collision handling and honest manual review. Removed discipline buckets, automatic importer/index claims and excluded collection routes; use reviewed explicit copies and current validation."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-archive-project/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-archive-project/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "53a017050d6970c699000d581dc6bd371f0d09a95506cd9ed3669df1ae3aee03",
+      "adaptation": "Retained single-project archive modes, exact-target collision protection, inventory preservation, pointer impact and delegated knowledge handoff. Removed operational planning/QA products, role setup, notification and receipt assumptions; retain active and archived Decision lineage."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "3cf2ca35c4171e9cde15d8ed67ed6a958fb5803802dcf47b0c55f0c3d1db58aa",
+      "adaptation": "Retained original two-stage active-agent controller workflow, bounds, evidence rules, input freshness, advisory semantics and cleanup. Removed operational planning, private metadata, uninstalled CI/producer attestations and evaluation claims; adapted remote main and explicit host limitations."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-onboard/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-onboard/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "daf229b2501f5420f016925cb12d92e09df1f9a5ca05c90f4b25b2d3a58dbb8d",
+      "adaptation": "Retained sandbox isolation, real-contract validation, upstream-first teaching, grouped drafting, hands-on edits and honest completion. Replaced removed discipline/CK tracks with fictional small-project knowledge and changed-evidence exercise; no claim of complete T3 lifecycle coverage."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/references/stage1-schema.json",
+      "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/references/stage1-schema.json",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "09900f034971311d5348ad2d4a2b79e4f82d253cd67bf64f3be50fb60adc818c",
+      "adaptation": "Retained portable bounded semantic controller, schemas, owned temporary sessions, schema/evidence validation, input binding and Git-tree isolation. Adapted default remote to main, renamed governance exclusion, removed dedicated operational-planning exclusions. No company or evaluation package dependencies."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/references/stage2-schema.json",
+      "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/references/stage2-schema.json",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "7d28cfb7e2b19c0df0a32bd15b033690bf8500791e31f7d148c39e9a06c7848f",
+      "adaptation": "Retained portable bounded semantic controller, schemas, owned temporary sessions, schema/evidence validation, input binding and Git-tree isolation. Adapted default remote to main, renamed governance exclusion, removed dedicated operational-planning exclusions. No company or evaluation package dependencies."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/scripts/lib.mjs",
+      "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/scripts/lib.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c5d9470a321650950750678a64aeb5da14a33dcd4c56bbd8cb646b7d3f79f969",
+      "adaptation": "Retained portable bounded semantic controller, schemas, owned temporary sessions, schema/evidence validation, input binding and Git-tree isolation. Adapted default remote to main, removed source-name-specific governance exclusion, removed dedicated operational-planning exclusions. No company or evaluation package dependencies."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/scripts/semantic-project-audit.mjs",
+      "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/scripts/semantic-project-audit.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "939ab0a5c686bd55a6fb93a72927810223ab2477f6d2d5e306352adcd947f373",
+      "adaptation": "Retained portable bounded semantic controller, schemas, owned temporary sessions, schema/evidence validation, input binding and Git-tree isolation. Adapted default remote to main, renamed governance exclusion, removed dedicated operational-planning exclusions. No company or evaluation package dependencies."
+    },
+    {
+      "source_path": "scripts/__tests__/semantic-project-audit.test.mjs",
+      "target_path": "scripts/__tests__/semantic-project-audit.test.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "edf957361643c4cdd7c1cf11834957943d7ee7b2f2bebd0ff19cdd44051ed810",
+      "adaptation": "Retained generic controller, routing, bounded evidence, input freshness, Git isolation, invalid-output and owned-cleanup tests. Removed four dedicated planning-product tests/fixtures and the company metadata-validator import/constant comparison; neutralized synthetic assistant naming."
+    },
+    {
+      "source_path": "scripts/__tests__/semantic-audit-freshness.test.mjs",
+      "target_path": "scripts/__tests__/semantic-audit-freshness.test.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "7c132504d23dc25e432a5cf220cb82ca5ed62d6f5b885c3b2abc76b929fb9ee0",
+      "adaptation": "Retained four generic content-freshness and conflict-isolation tests; target remote main while fixture branch master remains an explicit supported base."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-change-impact/scripts/producer-conflict-audit.mjs",
+      "target_path": "skills-hub/hb-skills/hb-change-impact/scripts/producer-conflict-audit.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c6a26924a33876b4369a47b3789be549795b9e060e75fe13c675ea1e1683f613",
+      "adaptation": "Retained bounded two-stage producer comparison, batching, evidence/schema validation, input binding and owned sessions. Removed excluded planning/site/action routes, use current boundary contract, and protect main as well as master from optional producer push completion. Include existing shared script and workflow code as comparison evidence, excluding tests/fixtures."
     }
   ]
 }

@@ -24,7 +24,7 @@ personal projects. Do not move implementation into this repository by assumption
 | projects-in-progress/ | Developing project context and decisions |
 | knowledge-hub/ | Reusable knowledge with applicability and source support |
 | production-features/ | Knowledge about delivered work |
-| skills-hub/ | Workflow sources; seven workflows adapted, host integration pending |
+| skills-hub/ | Fifteen workflows; Codex CLI discovery verified, other host behavior pending |
 | scripts/ | Deterministic supporting mechanics and tests |
 
 Rules have one maintained owner. Other documents link to that owner. Decisions
@@ -37,10 +37,12 @@ Mechanical checks detect structural defects. Agents review evidence, meaning,
 contradictions, and downstream effects. Humans retain decision authority.
 One layer cannot substitute for another.
 
-Currently implemented: Markdown source-link and footnote checks plus a portable
-repository check command. Host hooks, skill runtime integration, semantic overlap
-review, and model-based evaluations remain migration tasks. No connector is
-required for the current checks.
+Currently implemented: source-link and Decision checks, local change discovery,
+bounded semantic/producer controllers, Codex skill discovery and optional Git
+checks. The controllers validate inputs and response structure; the agent judges
+claims and ownership. Agent lifecycle/tool hooks and automatic audit gates remain
+unimplemented. Model evaluations remain a separate task. See the
+[mechanics inventory](projects-in-progress/agentic-brain/t2-mechanics.md).
 
 ## External integrations
 

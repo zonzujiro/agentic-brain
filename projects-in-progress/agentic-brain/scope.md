@@ -18,9 +18,11 @@ Recorded from Ivan's instructions on 30.10.2026.
 
 ## Existing skill candidates
 
-These fifteen are candidates for adaptation, not installed capabilities or an
-approval of every inherited behavior. Two knowledge writers retain old discipline
-prefixes below only to identify their source packages; public naming is pending.
+These fifteen identify the reviewed source packages, not approval of every
+inherited behavior. All now have adapted instruction sources; see the mechanics
+inventory for implemented and missing behavior. The two knowledge writers use
+neutral `hb-create-feature-doc` and `hb-create-product-context` names locally;
+the old discipline prefixes below identify only their source packages.
 
 - `hb-add-decision`
 - `hb-add-knowledge-hub-doc`

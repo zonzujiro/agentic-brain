@@ -1,4 +1,4 @@
-name: Validate foundation
+name: Validate repository
 on:
   push:
     branches: [main]

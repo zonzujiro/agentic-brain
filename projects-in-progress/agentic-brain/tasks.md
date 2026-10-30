@@ -16,30 +16,22 @@ company access; the source checkout remains untouched.
 
 ## T2 — Core governance, skills, and hooks
 
-State: in progress. First adapted source: `hb-resolve-artifact-write` and its
-write-boundary contract. Source hashes and transformations are in `extraction.json`.
-It is a read-only instruction workflow; host discovery and hooks are not installed.
-Seven adapted sources cover routing, change-impact review, skill review,
-shared-knowledge writing, Decision authoring, Decision review and impact resolution.
-Eight candidates and host acceptance remain pending.
+State: in progress. All fifteen candidate instruction workflows are adapted,
+with neutral names for the two knowledge writers. The portable semantic and
+producer controllers are retained, not replaced by manual-only descriptions.
+Source hashes and transformations are in `extraction.json`.
 
-The source initializer was also inspected: its team registry, notification routes,
-source-domain registry, downstream skill handoff, metadata and overlap validators
-need replacement or removal before adaptation. None are carried in as requirements.
+Local validation: 66 tests and repository checks pass. All fifteen skill sources
+pass the format checker in an isolated temporary PyYAML environment; core runtime
+still has no npm dependencies. Codex CLI 0.144.2 discovered all fifteen repository
+skills and successfully invoked the routing skill in an ephemeral read-only trial.
+Optional Git hooks passed real disposable commit/push tests; no main-checkout hook
+configuration was changed. These are separate kinds of evidence.
 
-Validation: twenty tests and repository checks pass locally. The impact scanner
-has focused coverage for removed-source consumers, exact references, missing
-baselines, durable-rule classification and outside-path protection. The skill
-format checker passes all seven sources using PyYAML in a temporary environment;
-no runtime dependency was added to the repository.
-Decision mechanics now validate stable paths, dates, impact metadata and lineage;
-the shared parser was moved out of the excluded notification module. Eight tests
-cover valid open choices, metadata, date failures, false completion, reverse lineage
-supersession failures, unsupported scalar syntax and cross-project reverse lineage. A parser or structural pass cannot establish approval.
-A fresh-agent read-only trial resolved an existing evidence-rule update, refused
-an unowned runnable app under shared knowledge, and withheld delivered-work
-promotion based only on passing tests. This is a limited manual behavior trial,
-not the T5 evaluation suite or host-hook acceptance.
+See [T2 mechanics](t2-mechanics.md) for the exact retained/adapted mechanics,
+removed dedicated tests, host evidence and missing work. Agent tool hooks, automatic
+audit enforcement and remaining portable validators/adopter are still pending,
+not approved exclusions. T2 acceptance is not complete.
 
 Adapt the fifteen candidates in scope; retain substantive reusable contracts.
 Remove obsolete owners, package references, schemas, source routes, notification
@@ -50,7 +42,9 @@ is tested in an actual supported host; no inherited company service is mandatory
 
 ## T3 — Build your own Brain and explain it
 
-State: pending; initial reading route exists.
+State: pending; initial reading route, minimal project starter and a fictional
+knowledge onboarding exercise exist. The full lifecycle example and explanation
+coverage review are not complete.
 
 Design the initializer and a general project-context writer. Establish whether
 same-repository and separate-repository implementation are supported. Build one

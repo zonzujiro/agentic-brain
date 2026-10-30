@@ -10,11 +10,14 @@ Private extraction in progress. This is the first working foundation, not a
 complete release or a drop-in replacement for its source, Harmony Brain.
 No open-source license or publication clearance has been established yet.
 
-Available now: evidence and communication guidance, source-link and footnote
-validation, a dependency-free test suite, passing hosted foundation checks, and
-seven explicitly readable [workflows](skills-hub/README.md).
-The full skill catalog, host hooks, connector adapters, and model evaluations
-are not installed or implemented here yet.
+Available now: evidence and communication guidance, fifteen adapted workflows,
+Codex repository discovery, source-link and Decision checks, bounded semantic and
+producer audit controllers, and optional local Git checks. Deterministic tests
+and hosted CI support the mechanics; agent review still owns meaning.
+
+Agent tool hooks, automatic audit enforcement, connector adapters and model
+evaluations are not installed. The [T2 inventory](projects-in-progress/agentic-brain/t2-mechanics.md)
+separates retained mechanics, tested host behavior and remaining migration work.
 
 ## Start here
 
@@ -39,5 +42,6 @@ observe external connector calls. The check command does not rewrite files.
 ## Build your own Brain
 
 The intended experience is to choose your purpose, sources of truth, project
-structure, and optional workflows. The initializer and complete worked example
-are tracked in the task list; do not treat this checkout as a finished template.
+structure, and optional workflows. The project starter and a sandbox onboarding exercise are available. A complete
+Brain initializer and worked lifecycle are still tracked in the task list; do
+not treat this checkout as a finished template.

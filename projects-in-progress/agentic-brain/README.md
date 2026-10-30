@@ -1,6 +1,6 @@
 # Agentic Brain extraction
 
-Owner: Ivan. Started: 30.10.2026. State: initial foundation implemented; extraction
+Owner: Ivan. Started: 30.10.2026. State: foundation and core workflow increments implemented; extraction
 and release validation in progress.
 
 Create a separate, initially private repository that helps people build their own
@@ -10,6 +10,7 @@ Harmony Brain continues independently and is not modified by this project.
 
 - [Accepted scope and candidates](scope.md)
 - [Tasks, completion criteria, and open choices](tasks.md)
+- [Mechanics and host verification](t2-mechanics.md)
 - [File provenance for this increment](extraction.json)
 
 The scope records decisions from the founding conversation with Ivan. It does not

@@ -110,12 +110,31 @@ expected local path or pattern, and any external destination.
 Do not edit a vendored skill to resolve a finding. Route the correction to a
 Brain-owned extension or adoption choice, or to its upstream owner.
 
-Perform this comparison in the current agent session. The source's semantic
-controller, push interception and automatic producer gate are not migrated.
-Record the inspected outputs and gaps in chat or the existing working record.
-No external connector or model evaluation kit is required for local review;
-when an external output matters, inaccessible content remains an evidence gap.
-Do not fabricate a clear comparison from names or URLs alone.
+Use the bundled controller with an explicit comparison base:
+
+```sh
+node skills-hub/hb-skills/hb-change-impact/scripts/producer-conflict-audit.mjs prepare --base=origin/main --no-working-tree
+```
+
+For a local proposed skill, omit `--no-working-tree` and select `--target=<path>`.
+Supply `--output-path=<path>` or `--output-label=<external output>` when the intended
+output is not explicit in the source. External outputs require actual source-linked
+read evidence, not a fabricated snapshot; absent evidence remains a coverage gap.
+The optional `--external-evidence-file` accepts an array of objects with `id`,
+`for_output`, `source` and bounded `text` fields, in temporary storage.
+
+Read the returned prompt, packet and schema. Write only the declared result file,
+then run `advance --session=<path>`. If Stage 2 is requested, compare only the
+supplied pairs and run `finalize --session=<path>` after writing its result.
+Continue every batch until the aggregate result is returned. Use `cancel` when
+abandoning a session. The controller validates coverage, citations and unchanged
+inputs; the agent judges meaning. Its compatibility field `writer_map` carries
+the current write-boundary contract, not a historical Decision.
+
+No automatic push interception or CI attestation guard is installed. Optional
+`--push` is permitted only after all batches and actual delivery authorization;
+never invent `--approved-by` or a resolution to pass a gate. The semantic audit
+and this producer review have separate results.
 
 For each proposed output, establish its purpose, reader, mutable facts,
 canonical owner, and update lifecycle. Compare possible matches in existing
