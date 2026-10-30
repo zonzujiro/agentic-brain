@@ -38,6 +38,20 @@
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "d81155b85d2d3f8f25f7e2526733cefb1883ac94401a05d839b04a8903c739f1",
       "adaptation": "Retained five independent source-link regressions; omitted hook-engine and discipline-path integration cases pending hook migration"
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-resolve-artifact-write/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-resolve-artifact-write/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d25f6d5991441300904344c7db5355d07b8970db6961624e656d1dcb8d66e653",
+      "adaptation": "Preserved six-step read-only boundary resolution, existing-target handling and guardrails; removed obsolete metadata, unmigrated gate profiles and excluded authoring routes; linked current contracts and exposed unavailable automation."
+    },
+    {
+      "source_path": "governance/artifacts/artifact-write-boundary.md",
+      "target_path": "governance/artifacts/artifact-write-boundary.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "eb74b2bfaaf9440685ba063af91670af14222d31c965f522606dff36d57e9c48",
+      "adaptation": "Preserved pre-write resolution, maturity, existing-artifact handling and user visibility; replaced internal surface map with current extracted owners; removed excluded format exceptions, prototype products, gate claims and unmigrated decision lifecycle."
     }
   ]
 }

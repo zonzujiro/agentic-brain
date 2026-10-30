@@ -8,8 +8,9 @@ Create only the directories needed for real content. Surface READMEs describe
 the initial allowed contents; new durable shapes need an explicit proposal.
 
 Repository evolution belongs in projects-in-progress/agentic-brain/. General
-rules belong in governance/. Scripts implement mechanical behavior. Skills will
-own repeatable workflows after their migration; none are active yet.
+rules belong in governance/. Scripts implement mechanical behavior. Adapted workflow source is listed in [skills](../../skills-hub/README.md); host
+discovery and hooks are not installed. Resolve material writes through the
+[write-boundary contract](../artifacts/artifact-write-boundary.md).
 
 ## Changes and authority
 

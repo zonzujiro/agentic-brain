@@ -24,7 +24,7 @@ personal projects. Do not move implementation into this repository by assumption
 | projects-in-progress/ | Developing project context and decisions |
 | knowledge-hub/ | Reusable knowledge with applicability and source support |
 | production-features/ | Knowledge about delivered work |
-| skills-hub/ | User-extensible workflows; migration still pending |
+| skills-hub/ | Workflow sources; one routing helper adapted, host integration pending |
 | scripts/ | Deterministic supporting mechanics and tests |
 
 Rules have one maintained owner. Other documents link to that owner. Decisions

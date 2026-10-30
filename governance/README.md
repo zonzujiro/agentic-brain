@@ -4,6 +4,7 @@ Each rule has one maintained owner. Start with the question you need to answer.
 
 - [How do I work here?](operations/repo-workflows.md)
 - [How should explanations read?](operations/communication.md)
+- [Where does a write belong?](artifacts/artifact-write-boundary.md)
 - [What supports a claim?](quality/evidence-policies.md)
 - [How should sources appear?](quality/evidence/grounding.md)
 - [Which checks apply now?](quality/quality-gates.md)

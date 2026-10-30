@@ -5,9 +5,9 @@ for implementation evidence or create external tickets.
 
 ## T1 — Independent foundation
 
-State: implemented and validated locally on 30.10.2026. Nine tests and the
-repository checks passed on Node.js 26.7.0. Hosted Node.js 24 validation and
-remote delivery are separate checks.
+State: baseline `f094e45` pushed to private `zonzujiro/agentic-brain` on
+30.10.2026. Nine tests and repository checks passed locally on Node.js 26.7.0;
+[hosted Node.js 24 validation passed](https://github.com/zonzujiro/agentic-brain/actions/runs/41066397637).
 
 Separate checkout, accepted scope, source provenance, core evidence and
 communication guidance, dependency-free source-link checks, and hosted CI definition.
@@ -16,7 +16,22 @@ company access; the source checkout remains untouched.
 
 ## T2 — Core governance, skills, and hooks
 
-State: pending.
+State: in progress. First adapted source: `hb-resolve-artifact-write` and its
+write-boundary contract. Source hashes and transformations are in `extraction.json`.
+It is a read-only instruction workflow; host discovery and hooks are not installed.
+Fourteen candidate skills and host acceptance remain pending.
+
+The source initializer was also inspected: its team registry, notification routes,
+source-domain registry, downstream skill handoff, metadata and overlap validators
+need replacement or removal before adaptation. None are carried in as requirements.
+
+Validation: repository checks and nine existing tests cover the baseline mechanics,
+not skill behavior. The skill-creator format checker could not run because PyYAML
+is unavailable in both inspected Python runtimes; do not count it as a pass.
+A fresh-agent read-only trial resolved an existing evidence-rule update, refused
+an unowned runnable app under shared knowledge, and withheld delivered-work
+promotion based only on passing tests. This is a limited manual behavior trial,
+not the T5 evaluation suite or host-hook acceptance.
 
 Adapt the fifteen candidates in scope; retain substantive reusable contracts.
 Remove obsolete owners, package references, schemas, source routes, notification
