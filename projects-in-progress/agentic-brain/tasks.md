@@ -19,15 +19,23 @@ company access; the source checkout remains untouched.
 State: in progress. First adapted source: `hb-resolve-artifact-write` and its
 write-boundary contract. Source hashes and transformations are in `extraction.json`.
 It is a read-only instruction workflow; host discovery and hooks are not installed.
-Fourteen candidate skills and host acceptance remain pending.
+Seven adapted sources cover routing, change-impact review, skill review,
+shared-knowledge writing, Decision authoring, Decision review and impact resolution.
+Eight candidates and host acceptance remain pending.
 
 The source initializer was also inspected: its team registry, notification routes,
 source-domain registry, downstream skill handoff, metadata and overlap validators
 need replacement or removal before adaptation. None are carried in as requirements.
 
-Validation: repository checks and nine existing tests cover the baseline mechanics,
-not skill behavior. The skill-creator format checker could not run because PyYAML
-is unavailable in both inspected Python runtimes; do not count it as a pass.
+Validation: twenty tests and repository checks pass locally. The impact scanner
+has focused coverage for removed-source consumers, exact references, missing
+baselines, durable-rule classification and outside-path protection. The skill
+format checker passes all seven sources using PyYAML in a temporary environment;
+no runtime dependency was added to the repository.
+Decision mechanics now validate stable paths, dates, impact metadata and lineage;
+the shared parser was moved out of the excluded notification module. Eight tests
+cover valid open choices, metadata, date failures, false completion, reverse lineage
+supersession failures, unsupported scalar syntax and cross-project reverse lineage. A parser or structural pass cannot establish approval.
 A fresh-agent read-only trial resolved an existing evidence-rule update, refused
 an unowned runnable app under shared knowledge, and withheld delivered-work
 promotion based only on passing tests. This is a limited manual behavior trial,

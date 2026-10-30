@@ -4,6 +4,8 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { validateFootnotes, validateChangedSourceFootnoteLinks } from './lib/markdown/footnotes.mjs';
 
+import { validateDecisions } from './validate_decisions.mjs';
+
 const ignored = new Set(['.git', '.brain', 'node_modules']);
 export function validateRepository(root) {
   const errors = [];
@@ -28,6 +30,7 @@ export function validateRepository(root) {
     }
   }
   walk(root);
+  errors.push(...validateDecisions(root));
   return errors;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
@@ -35,5 +38,5 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   const errors = validateRepository(root);
   for (const error of errors) console.error(error);
   if (errors.length) process.exitCode = 1;
-  else console.log('Repository checks passed (local Markdown links, footnotes, selected private integration markers).');
+  else console.log('Repository checks passed (local Markdown links, footnotes, Decision structure, selected private integration markers).');
 }

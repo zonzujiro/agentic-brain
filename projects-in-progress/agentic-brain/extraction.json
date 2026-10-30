@@ -52,6 +52,104 @@
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "eb74b2bfaaf9440685ba063af91670af14222d31c965f522606dff36d57e9c48",
       "adaptation": "Preserved pre-write resolution, maturity, existing-artifact handling and user visibility; replaced internal surface map with current extracted owners; removed excluded format exceptions, prototype products, gate claims and unmigrated decision lifecycle."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-change-impact/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-change-impact/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "967910d05d33f0aedf5b89d40fe69744e6d78c8564c6b5616c9a6e88fa89a7d0",
+      "adaptation": "Preserved concrete-delta, producer-conflict, full-population, authority, disposition, rollout and independent final-review contracts. Removed unmigrated producer controller and push hooks; retained local scanner and disclosed manual review and baseline coverage limits."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-change-impact/references/review-checklist.md",
+      "target_path": "skills-hub/hb-skills/hb-change-impact/references/review-checklist.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "002400a50b6b5e1cd71df7799e1a2caa1cf40bbb4837d3066545a87644b7dd67",
+      "adaptation": "Retained semantic review checklist; replaced source-specific role labels with generic agent role."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-change-impact/scripts/discover-change-impact.mjs",
+      "target_path": "skills-hub/hb-skills/hb-change-impact/scripts/discover-change-impact.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "b3e9551d36d98f4d0250784324e99eae629767912dfd3f5970e3324767b35bd2",
+      "adaptation": "Retained explicit-path, shared-source and optional Decision affected-doc discovery. Removed internal feedback dependency, operational products and obsolete durable-path lists; include shared scripts, reject escaping changed paths, prevent outside symlink reads and expose missing baseline coverage."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-review-skill/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-review-skill/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "214f88e89cfcec594752d0793b8391bab1fff785fe0c371e45024a07be75cf2d",
+      "adaptation": "Preserved semantic skill rubric, producer-conflict review, edit scope and evidence requirements; removed private principles, excluded evaluation references and nonexistent package validator; use current repository checks with explicit semantic limits."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-add-knowledge-hub-doc/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-add-knowledge-hub-doc/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "cf12cd58c45148026f418dd6b9ef47259b20468d1b11bddb9073bd4f167eb8d8",
+      "adaptation": "Preserved nine-step shared-reference authoring and evidence review; removed discipline taxonomy, automatic evidence logs, inherited PR templates and gate names; use current hub contract and existing authorization, with small-project flat references."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-add-decision/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-add-decision/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "94a4a33c8bf46f8a16aaaad36776cbb35830a64a447652152080a7ee2b833288",
+      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-review-decision/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-review-decision/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d27dfcc7f7df3b69827bc5e65accc9f2c569d9b93588915dcd0a1335463e3fa0",
+      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-resolve-decision-impact/SKILL.md",
+      "target_path": "skills-hub/hb-skills/hb-resolve-decision-impact/SKILL.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "a838bb620e54897676d774b06eb9de0334f9b1acf8f2811031b6316738811172",
+      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-add-decision/references/workflow-contract.md",
+      "target_path": "skills-hub/hb-skills/hb-add-decision/references/workflow-contract.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "88366d1e9dd165b903a1502f13583c9bd677dd1676fc10115d54b95d4796030d",
+      "adaptation": "Retained operation contract and user-owned choices; removed dedicated QA applicability workflow and unmigrated gate profile."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-resolve-decision-impact/references/resolution-actions.md",
+      "target_path": "skills-hub/hb-skills/hb-resolve-decision-impact/references/resolution-actions.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "bc6de83dca5e016d1d26fd92ec657db04ec926f3c63bdf138aed2895653af71b",
+      "adaptation": "Retained narrow status transitions; removed excluded authoring handoffs and notification assumptions; route through current operational owners and name blockers."
+    },
+    {
+      "source_path": "scripts/notification/lib/frontmatter.mjs",
+      "target_path": "scripts/lib/markdown/frontmatter.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "810115cffef2eec237a0d28becfd9a1ecf92eb98a1ec1d21daefd761ea31ae71",
+      "adaptation": "Moved dependency-free block-style metadata parser out of excluded notification module; normalize BOM and CRLF. Restricted parser syntax is documented; notification behavior is not retained."
+    },
+    {
+      "source_path": "scripts/lib/repo-date.mjs",
+      "target_path": "scripts/lib/repo-date.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "81347dfa0dae99d526f4ddabfe374e357c66819de36d74023e92d957db1ccdb0",
+      "adaptation": "Adapted human dates to required dot-only format and reject impossible calendar dates."
+    },
+    {
+      "source_path": "scripts/validate_decisions.mjs",
+      "target_path": "scripts/validate_decisions.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "9446c6d1fe74f7fafc35a99fc01f5e703dcdf823f35ac9bac0ac946c803894e7",
+      "adaptation": "Retained stable-path, metadata, lineage, supersession-cycle and impact structure validation; moved parser import to shared Markdown utility, require valid dot dates, reject empty participants and misleading completion dates. Reject unsupported scalar forms and duplicate/unknown metadata keys; do not traverse symlinked decisions directories."
+    },
+    {
+      "source_path": "scripts/decision/decision-catalog.mjs",
+      "target_path": "scripts/decision/decision-catalog.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "ca3c638afb786741d6b52b659dca8117c684b3fd01bec1176dde0de404086780",
+      "adaptation": "Retained local metadata-first retrieval and reverse lineage derivation; removed dependency on notification module by moving shared parser. Validate records before retrieval and include sibling-project references when deriving reverse lineage."
     }
   ]
 }

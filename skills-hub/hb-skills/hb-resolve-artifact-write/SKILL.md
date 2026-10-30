@@ -32,7 +32,7 @@ the write boundary.
 Use the shared gates in `governance/quality/quality-gates.md` and the evidence policy in
 `governance/quality/evidence-policies.md`.
 
-Required evidence: root instructions, the [write-boundary contract](../../../governance/artifacts/artifact-write-boundary.md), operating rules, the target surface README, and an owning workflow contract when one exists. Inspect applicable accepted decisions; a proposal is not an adopted rule.
+Required evidence: root instructions, the [write-boundary contract](../../../governance/artifacts/artifact-write-boundary.md), operating rules, the target surface README, and an owning workflow contract when one exists. Use current contracts and validators for operational rules. Decisions supply rationale and lineage; a proposal is not an adopted rule.
 
 Read the required local sources before returning a boundary result. External
 sources are conditional on a claim that needs them; connector access is not
@@ -66,7 +66,7 @@ than guessing from the filename alone.
 Use `governance/operations/repo-workflows.md` and `governance/artifacts/artifact-write-boundary.md`.
 
 Do not infer a new surface from a convenient local folder. If no surface owns
-the artifact type, follow the change proposal process in the operating rules. The change-impact skill is not yet migrated.
+the artifact type, use [change-impact review](../hb-change-impact/SKILL.md) and the operating rules.
 
 ### 3. Resolve target path and maturity state
 
@@ -101,9 +101,9 @@ Classify the result:
 - rename/move target
 - conflict or user decision needed
 
-Run any decided surface-specific duplicate or overlap check. Do not invent a
-new fuzzy duplicate gate when the relevant Decision says that no concrete
-answer has been selected.
+Run duplicate or overlap checks required by the current surface contract and
+its validator. Decisions may explain the rule, but do not execute rules from
+history. If the current contract has no such check, do not invent a fuzzy gate.
 
 ### 5. Name later gates
 

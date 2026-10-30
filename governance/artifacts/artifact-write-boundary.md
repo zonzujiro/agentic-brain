@@ -25,8 +25,8 @@ The write boundary answers:
 If the boundary cannot be resolved from the operating rules, surface README,
 or an implemented workflow contract, stop the dependent write and follow the
 change proposal process in [operating rules](../operations/repo-workflows.md).
-The writer map and change-impact skill have not been migrated; do not assume
-an inherited writer is available.
+Use [change-impact review](../../skills-hub/hb-skills/hb-change-impact/SKILL.md).
+The inherited writer map has not been migrated; do not assume an old writer is available.
 
 ## When It Runs
 
@@ -103,8 +103,9 @@ Use these states for write-boundary resolution:
 binaries, scripts, and helper files do not become valid inside documentation
 surfaces by adding working metadata.
 
-Decision lifecycle details remain pending migration. Do not infer approval from
-a canonical filename, and do not invent a new decision schema in this helper.
+Decisions use the [stable Decision contract](../../skills-hub/hb-skills/hb-add-decision/SKILL.md),
+with no working suffix or lifecycle folders. Do not infer approval from a canonical
+filename or an unresolved choice.
 
 ## Existing-Artifact Handling
 
@@ -113,8 +114,9 @@ Before writing:
 1. Check whether the exact target path already exists.
 2. If it exists, classify the write as update, replacement, rename, or
    conflict.
-3. If the owning surface has a decided duplicate or overlap rule, run it.
-4. If no decided duplicate rule exists, do not invent a fuzzy duplicate scan as
+3. Run duplicate or overlap checks required by the current surface contract
+   and its validator; consult Decisions only for rationale and lineage.
+4. If the current contract has no duplicate rule, do not invent a fuzzy duplicate scan as
    a hard gate. Record exact-target handling and any obvious ambiguity.
 5. When the choice changes accepted truth, canonical structure, or user-facing
    scope, ask the user instead of choosing silently. Recording a user-supplied

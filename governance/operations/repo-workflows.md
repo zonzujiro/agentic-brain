@@ -41,3 +41,9 @@ an excluded capability. Do not rewrite source history or pull dirty checkouts.
 Use DD.MM.YYYY for human-facing dates. Machine formats remain machine formats.
 PR creation requires Ivan's explicit approval. Publishing this private repository
 requires separate approval after licensing and content review.
+
+## Date format
+
+Use DD.MM.YYYY for human-facing dates, including Decision creation and impact
+resolution. Machine timestamps retain their explicit machine format. A file edit
+date is not evidence that its underlying claims were reverified.

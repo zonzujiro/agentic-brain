@@ -12,7 +12,7 @@ No open-source license or publication clearance has been established yet.
 
 Available now: evidence and communication guidance, source-link and footnote
 validation, a dependency-free test suite, passing hosted foundation checks, and
-one explicitly readable [artifact-routing workflow](skills-hub/README.md).
+seven explicitly readable [workflows](skills-hub/README.md).
 The full skill catalog, host hooks, connector adapters, and model evaluations
 are not installed or implemented here yet.
 
