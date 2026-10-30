@@ -1,0 +1,43 @@
+{
+  "source": "Harmony Brain",
+  "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+  "recorded": "30.10.2026",
+  "status": "initial reviewed subset; full migration and publication review pending",
+  "files": [
+    {
+      "source_path": "governance/operations/communication.md",
+      "target_path": "governance/operations/communication.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "b91b74c7800e1e4c2cdd7a03bd889ed44e4e13c4c7be9b12d06375e1c874e536",
+      "adaptation": "Preserved substantive communication contract; renamed the owning Brain"
+    },
+    {
+      "source_path": "governance/quality/evidence-policies.md",
+      "target_path": "governance/quality/evidence-policies.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "476a5671d5b47e47c0e8df8c274a01d9a9ea17dae2b35f11106efa7ad3a2b962",
+      "adaptation": "Retained general evidence model and honesty invariant; removed source-specific profiles and unimplemented runtime assumptions; added explicit observation limits"
+    },
+    {
+      "source_path": "governance/quality/evidence/grounding.md",
+      "target_path": "governance/quality/evidence/grounding.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "f3ac47a4720ef162c3f8ee1d92fbaa6194d4490620e83fb24b4e930fd32f774c",
+      "adaptation": "Retained general grounding rules; removed company-specific examples and source-lane rules; described current validator without claiming active hooks"
+    },
+    {
+      "source_path": "scripts/lib/markdown/footnotes.mjs",
+      "target_path": "scripts/lib/markdown/footnotes.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "637e82d7336bb8ec4f07437d963c20a45e3dd192ed24b655bcb1d64052b4bcf7",
+      "adaptation": "Copied without changes"
+    },
+    {
+      "source_path": "scripts/__tests__/source-footnote-links.test.mjs",
+      "target_path": "scripts/__tests__/source-footnote-links.test.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d81155b85d2d3f8f25f7e2526733cefb1883ac94401a05d839b04a8903c739f1",
+      "adaptation": "Retained five independent source-link regressions; omitted hook-engine and discipline-path integration cases pending hook migration"
+    }
+  ]
+}
