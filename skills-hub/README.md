@@ -40,3 +40,22 @@ verified on 30.10.2026. This does not establish universal host compatibility,
 connector observation or automatic enforcement. See the
 [mechanics inventory](../projects-in-progress/agentic-brain/t2-mechanics.md) and
 [remaining tasks](../projects-in-progress/agentic-brain/tasks.md).
+
+## Structural checks and adoption
+
+`npm run check` checks skill names/descriptions, matching folder names, duplicate
+or unsupported metadata keys, regular package files and relative Codex discovery
+links. Optional supported metadata is preserved; the parser accepts block fields,
+not arbitrary YAML. It does not prove dependency availability or workflow quality.
+Canonical packages live directly under `hb-skills/`; discovery entries must point
+there and stale entries fail validation. Package symlinks are rejected.
+
+The adoption helper previews one reviewed package and requires that preview's
+digest to copy it. It never overwrites packages or discovery entries. `--link` is
+an explicit optional installation action. Review source ownership, dependencies,
+content and output conflicts before applying; the digest proves unchanged bytes,
+not semantic approval or distribution rights.
+
+Local lifecycle and delivery hooks now have shared rule implementations and
+repository configuration. Their live host activation still requires user trust
+and actual event trials; see [the host contract](../governance/operations/agent-hooks.md).

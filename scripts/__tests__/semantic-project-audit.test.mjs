@@ -274,13 +274,13 @@ test("routing removes rubric evaluations but never comparison targets", () => {
   assert.equal(merged.eligible_rubric_evaluations, 882);
 });
 
-test("project-relations changes conservatively compare every active project and rubric", () => {
+test("project-relations changes conservatively compare every active and shipped entry and rubric", () => {
   const projects = ["active:alpha", "active:beta", "active:gamma", "shipped:alpha", "shipped:delta"];
   const plan = buildPlan({ projects, changes: [{ status: "M", path: "projects-in-progress/project-relations.json", content: "+pair" }] });
-  assert.deepEqual(plan.changed_projects, ["active:alpha", "active:beta", "active:gamma"]);
-  assert.equal(plan.eligible_pair_count, 3);
-  assert.equal(plan.eligible_rubric_evaluations, 9);
-  assert.ok(plan.pairs.every((pair) => pair.projects.every((id) => id.startsWith("active:"))));
+  assert.deepEqual(plan.changed_projects, projects);
+  assert.equal(plan.eligible_pair_count, 10);
+  assert.equal(plan.eligible_rubric_evaluations, 30);
+  assert.ok(plan.pairs.some((pair) => pair.projects.includes("shipped:alpha")));
 });
 
 test("dormant projects are excluded from the active corpus", () => {
@@ -906,4 +906,11 @@ test("session-internal output paths cannot overwrite recovery state", () => {
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
+});
+
+test('qualified relation changes include shipped entries in complete comparison coverage', () => {
+  const projects = ['active:alpha', 'shipped:alpha', 'shipped:beta'];
+  const plan = buildPlan({ projects, changes: [{ status: 'M', path: 'projects-in-progress/project-relations.json' }] });
+  assert.deepEqual(plan.changed_projects, projects);
+  assert.equal(plan.pairs.length, 3);
 });

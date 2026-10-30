@@ -21,7 +21,7 @@ with neutral names for the two knowledge writers. The portable semantic and
 producer controllers are retained, not replaced by manual-only descriptions.
 Source hashes and transformations are in `extraction.json`.
 
-Local validation: 66 tests and repository checks pass. All fifteen skill sources
+Local validation: 116 tests and repository checks pass. All fifteen skill sources
 pass the format checker in an isolated temporary PyYAML environment; core runtime
 still has no npm dependencies. Codex CLI 0.144.2 discovered all fifteen repository
 skills and successfully invoked the routing skill in an ephemeral read-only trial.
@@ -29,9 +29,13 @@ Optional Git hooks passed real disposable commit/push tests; no main-checkout ho
 configuration was changed. These are separate kinds of evidence.
 
 See [T2 mechanics](t2-mechanics.md) for the exact retained/adapted mechanics,
-removed dedicated tests, host evidence and missing work. Agent tool hooks, automatic
-audit enforcement and remaining portable validators/adopter are still pending,
-not approved exclusions. T2 acceptance is not complete.
+removed dedicated tests, host evidence and missing work. Surface/skill validation, identifier comparison, the reviewed adoption helper,
+shared file rules, local lifecycle mounts and revision-bound delivery guards are
+implemented. The new Codex hook configuration still needs Ivan's review/trust in
+`/hooks`; a disposable read-only CLI trial did not receive identifiable Brain hook
+context. Therefore actual host enforcement remains unverified and T2 acceptance
+is blocked on that user-owned trust step. The PR guard passes local committed
+fixtures; actual hosted PR execution also remains unverified (no PR authorized).
 
 Adapt the fifteen candidates in scope; retain substantive reusable contracts.
 Remove obsolete owners, package references, schemas, source routes, notification

@@ -43,7 +43,8 @@ Read the [evidence policy](../quality/evidence-policies.md) and
 Add a workflow when repeated work has a clear input, owner, output, and consumer.
 Do not add a folder or manifest solely to look framework-ready. Reuse the existing
 owner, define the contract, then add checks for mechanically testable properties.
-The initializer and skill-adoption workflow are still pending here.
+The reviewed skill-adoption workflow and helper are implemented. The complete
+Brain initializer remains pending under T3.
 
 ## Agent explanation route
 

@@ -51,7 +51,17 @@ They check the current working tree, not an isolated staged or pushed snapshot;
 hosted CI checks the committed revision separately. They do not observe external reads or writes, and do not enforce PR approval or
 semantic truth. Host-disabled hooks still require CI and agent review.
 
-## 6. Establish the next useful action
+## 6. Inspect optional agent hooks
+
+Read `governance/operations/agent-hooks.md` and inspect
+`node scripts/install-agent-hooks.mjs`. Repository configuration is provided;
+other checkouts can use the non-overwriting installer within setup authorization.
+A written configuration is not trusted or active. The user must review the exact
+hook definitions through Codex `/hooks`; do not change trust or use bypass flags
+on their behalf. Exercise actual events in a disposable checkout after trust.
+Report skipped/unverified events separately from passing fixture tests.
+
+## 7. Establish the next useful action
 
 Ask only for missing intent: orient to existing work, start one small project,
 record a choice, or inspect evidence. No role selection, notification channel or

@@ -22,8 +22,9 @@ turning model judgement into a merge gate.
 - `drift_risk`: the same mutable fact copied under multiple owners without a
   canonical pointer
 
-The semantic controller is separate from repository structural checks. A
-project-identifier overlap validator is not installed in this extraction.
+The semantic controller is separate from repository structural checks. The
+advisory `node scripts/validate_project_overlap.mjs` complements it with exact
+identifier checks and explicit coverage gaps.
 
 ## Runtime contract
 

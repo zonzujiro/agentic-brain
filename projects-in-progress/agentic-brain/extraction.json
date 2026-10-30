@@ -184,7 +184,7 @@
       "target_path": "skills-hub/hb-skills/hb-bootstrap/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "a4da8193d0961dfdb339efa5bbefc4b24c3ab7d8f1f233c0f99c309419122baa",
-      "adaptation": "Replaced excluded gateway, registry, role and notification setup with idempotent local runtime/check orientation and optional non-overwriting Git-check installer. No connector or host-discovery claim."
+      "adaptation": "Replaced excluded gateway, registry, role and notification setup with idempotent local runtime/check orientation and optional non-overwriting Git-check installer. No connector or host-discovery claim.; documented optional host hook configuration and user-owned trust step"
     },
     {
       "source_path": "skills-hub/hb-skills/hb-start-project/SKILL.md",
@@ -198,7 +198,7 @@
       "target_path": "skills-hub/hb-skills/hb-adopt-skill/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "8c6656f0360c353e90dd9e2c4059db1a34af5366791a5e3a9c6f496e954391e6",
-      "adaptation": "Retained bounded source adoption, metadata preservation, collision handling and honest manual review. Removed discipline buckets, automatic importer/index claims and excluded collection routes; use reviewed explicit copies and current validation."
+      "adaptation": "Retained bounded source adoption, metadata preservation, collision handling and honest manual review. Removed discipline buckets, automatic importer/index claims and excluded collection routes; use reviewed explicit copies and current validation.; reviewed digest-bound helper with explicit optional discovery installation"
     },
     {
       "source_path": "skills-hub/hb-skills/hb-archive-project/SKILL.md",
@@ -219,7 +219,7 @@
       "target_path": "skills-hub/hb-skills/hb-onboard/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "daf229b2501f5420f016925cb12d92e09df1f9a5ca05c90f4b25b2d3a58dbb8d",
-      "adaptation": "Retained sandbox isolation, real-contract validation, upstream-first teaching, grouped drafting, hands-on edits and honest completion. Replaced removed discipline/CK tracks with fictional small-project knowledge and changed-evidence exercise; no claim of complete T3 lifecycle coverage."
+      "adaptation": "Retained sandbox isolation, real-contract validation, upstream-first teaching, grouped drafting, hands-on edits and honest completion. Replaced removed discipline/CK tracks with fictional small-project knowledge and changed-evidence exercise; no claim of complete T3 lifecycle coverage.; use explicit document-sandbox validator so repository root ownership does not invalidate the temporary lesson"
     },
     {
       "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/references/stage1-schema.json",
@@ -240,7 +240,7 @@
       "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/scripts/lib.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "c5d9470a321650950750678a64aeb5da14a33dcd4c56bbd8cb646b7d3f79f969",
-      "adaptation": "Retained portable bounded semantic controller, schemas, owned temporary sessions, schema/evidence validation, input binding and Git-tree isolation. Adapted default remote to main, removed source-name-specific governance exclusion, removed dedicated operational-planning exclusions. No company or evaluation package dependencies."
+      "adaptation": "Retained portable bounded semantic controller, schemas, owned temporary sessions, schema/evidence validation, input binding and Git-tree isolation. Adapted default remote to main, removed source-name-specific governance exclusion, removed dedicated operational-planning exclusions. No company or evaluation package dependencies.; relation input accepts qualified active/shipped members as well as legacy active slugs; relation changes cover the complete qualified active/shipped corpus"
     },
     {
       "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/scripts/semantic-project-audit.mjs",
@@ -269,6 +269,132 @@
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "c6a26924a33876b4369a47b3789be549795b9e060e75fe13c675ea1e1683f613",
       "adaptation": "Retained bounded two-stage producer comparison, batching, evidence/schema validation, input binding and owned sessions. Removed excluded planning/site/action routes, use current boundary contract, and protect main as well as master from optional producer push completion. Include existing shared script and workflow code as comparison evidence, excluding tests/fixtures."
+    },
+    {
+      "source_path": "scripts/validate_skills_hub.mjs",
+      "target_path": "scripts/validate_skills_hub.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "7a47aa7a72c5dc60f65508e03bad236f32a1a7dcdf7bb744663a7c43298d2c30",
+      "adaptation": "Adapted portable metadata, folder and discovery checks; shared strict block parser with adopter; removed collection metadata, evaluation catalog and host-specific requirements."
+    },
+    {
+      "source_path": "scripts/lib/hooks/surfaces.mjs",
+      "target_path": "scripts/lib/hooks/surfaces.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "7fc5430301e4d402afea5b5d3a5ce96cd17da042be6a81b0d7fe76aaae86d761",
+      "adaptation": "Retained root ownership mechanic against current surface contracts; removed inherited products, format blacklist, discipline exceptions and source-only root files."
+    },
+    {
+      "source_path": "scripts/validate_root_paths.mjs",
+      "target_path": "scripts/validate_root_paths.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "949464322cceb16e3999b0e3da7f5187591cab39c1413d5ee4f41c2d68b5cdf5",
+      "adaptation": "Retained portable path validation CLI backed by current surface map."
+    },
+    {
+      "source_path": "scripts/lib/project-overlap/detect.mjs",
+      "target_path": "scripts/lib/project-overlap/detect.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "6fd400cc9ed41245e5b58bd6e05b332c4ff2cd0ebdaf541c72f7789862f8c664",
+      "adaptation": "Retained claim positions, opaque identifiers, scoped packages, clustering, dormant filtering, coverage reporting and advisory output; removed planning and placement rules; neutral owners and qualified relation members with legacy active-slug compatibility."
+    },
+    {
+      "source_path": "scripts/validate_project_overlap.mjs",
+      "target_path": "scripts/validate_project_overlap.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c9eaf2152323c00262fb60efff24ed27a757a5914c545863786771dccd47bac5",
+      "adaptation": "Retained advisory CLI and touched-project annotation filtering; crashes fail visibly; removed excluded placement output."
+    },
+    {
+      "source_path": "scripts/__tests__/project-overlap.test.mjs",
+      "target_path": "scripts/__tests__/project-overlap.test.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "a8d3bde02f1c0a05b4fad88dfe28c84723eaaae29af7e3f5d8e3b73eeb7d7bb6",
+      "adaptation": "Retained 27 generic identifier and coverage tests with fictional examples; removed delivery-plan test, three excluded artifact-placement tests and source-corpus-specific expectation."
+    },
+    {
+      "source_path": "skills-hub/hb-skills/hb-adopt-skill/scripts/adopt_skills.mjs",
+      "target_path": "skills-hub/hb-skills/hb-adopt-skill/scripts/adopt_skills.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "a4bb091d539e248baef99d0ed61146c26f57a6a38dc1b8905abfbee92a3ab80a",
+      "adaptation": "Adapted reviewed package inventory/copy; one explicit normalized package, preview-first digest-bound apply, no metadata stripping, rename, script execution or implicit index mutation; refuse collisions and symlinks."
+    },
+    {
+      "source_path": "scripts/hooks/lib/adapter.mjs",
+      "target_path": "scripts/hooks/lib/adapter.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "07a20af84e6a02d668fcadb308552d2456a47848b8f432ae1716012e016eaa04",
+      "adaptation": "Retained portable structured patch and literal command parsing; resolve relative paths from event cwd; no external connector observation."
+    },
+    {
+      "source_path": "scripts/lib/hooks/engine.mjs",
+      "target_path": "scripts/lib/hooks/engine.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "92a9943918f6b874f2bfdd625c71d1bf38c901bc9ffa8297f2c854180542f57a",
+      "adaptation": "Adapted shared read-only rule mount used by repository validation and hooks; current root/link/footnote rules, no inherited session receipts or quality-feedback dependencies."
+    },
+    {
+      "source_path": "scripts/lib/hooks/rules.mjs",
+      "target_path": "scripts/lib/hooks/advisories.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "580459cd8e413ba12a66aee3e8a69fc55419c599164c194fc9420d8ee1cf9781",
+      "adaptation": "Retained hedge, empty-section, linked-gap and peer review as non-blocking advisories; bounded linked reads to repository; removed excluded artifact and role rules, replaced duplicate Decision rules with existing shared validator."
+    },
+    {
+      "source_path": "scripts/hooks/run-engine.mjs",
+      "target_path": "scripts/hooks/run-engine.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fcc0b95b9b23cbc2539628ea073fdb23541322dfc1f1f14620895bd0437d68a5",
+      "adaptation": "Adapted read-only report CLI to current shared engine; no automatic authored-content normalization."
+    },
+    {
+      "source_path": "scripts/hooks/pre-write-guard.mjs",
+      "target_path": "scripts/hooks/local-lifecycle.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c7594885d10d1f598542988235813374bcebe148701733ad85b0220c8a3eba33",
+      "adaptation": "Adapted structured target checks to current root contract, deletion/move repair, event cwd and symlink handling; consolidated lifecycle mounts without connector observation or excluded generated artifacts."
+    },
+    {
+      "source_path": "scripts/hooks/session-boot.mjs",
+      "target_path": "scripts/hooks/local-lifecycle.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "31c7862b6f215013fe95b14c2535f9744d34a28ce9de430ff06da1860c1cc2ce",
+      "adaptation": "Retained governing pointers; removed role-selector requirement and source session rotation; no transcripts or evidence receipts written."
+    },
+    {
+      "source_path": "scripts/hooks/stop-completeness.mjs",
+      "target_path": "scripts/hooks/local-lifecycle.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "833e81ef519b830b4863044834190b498e2ce26fa8a3072508bd614605e70321",
+      "adaptation": "Retained final-check/repair continuation using current repository validator and host stop flag; whole-tree read-only check with one continuation, explicit pre-existing-work boundary; excluded planning/QA generation and observation receipts."
+    },
+    {
+      "source_path": "scripts/hooks/pre-agent-push-semantic-audit.mjs",
+      "target_path": "scripts/hooks/pre-delivery.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "e5aa18cf20cd4feb899527c8ffafe7300438244fbb35d5b2bf7e4e8a7d630138",
+      "adaptation": "Adapted bounded direct-command guard to this checkout/main and both current commit-bound audits; rejects workdir/repository overrides, unsupported push scopes and compound commands; no inherited sync exemption."
+    },
+    {
+      "source_path": ".github/scripts/semantic-project-audit-guard.mjs",
+      "target_path": "scripts/delivery/semantic-project-audit-guard.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "2c8f1b90bb566617811babccc3402b9c585f3eef0c868d6d2b33a5715e337f33",
+      "adaptation": "Retained attestation format/digest checks; removed Harmony sync-title exemption and inherited import."
+    },
+    {
+      "source_path": ".github/scripts/producer-conflict-audit-guard.mjs",
+      "target_path": "scripts/delivery/producer-conflict-audit-guard.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "a42220b3f5dbd17feb0aa3c061051364943320ba8d699d8c27c061594ddf09c5",
+      "adaptation": "Retained producer finding counts, resolution and owner fields; removed Harmony sync-title exemption."
+    },
+    {
+      "source_path": ".codex/hooks.json",
+      "target_path": ".codex/hooks.json",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "780ea2ddf1bc1b93ed3a72369dc566ea88470dece7a444a3a8df0223bd82521a",
+      "adaptation": "Adapted only local lifecycle, structured-write and bounded delivery events; no external evidence observer, checkout policy or excluded generator mounts; requires user hook trust."
     }
   ]
 }

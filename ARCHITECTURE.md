@@ -38,10 +38,10 @@ contradictions, and downstream effects. Humans retain decision authority.
 One layer cannot substitute for another.
 
 Currently implemented: source-link and Decision checks, local change discovery,
-bounded semantic/producer controllers, Codex skill discovery and optional Git
-checks. The controllers validate inputs and response structure; the agent judges
-claims and ownership. Agent lifecycle/tool hooks and automatic audit gates remain
-unimplemented. Model evaluations remain a separate task. See the
+bounded semantic/producer controllers, identifier comparison, skill/adoption
+validation, Codex discovery, shared file rules and optional Git checks. The controllers validate inputs and response structure; the agent judges
+claims and ownership. Agent lifecycle/tool hooks and delivery guards are implemented; actual
+host activation is still unverified pending user trust. Model evaluations remain a separate task. See the
 [mechanics inventory](projects-in-progress/agentic-brain/t2-mechanics.md).
 
 ## External integrations

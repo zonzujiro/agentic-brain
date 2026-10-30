@@ -82,8 +82,10 @@ repository's broader path exceptions. Current routes are:
 | Shared deterministic mechanics and tests | `scripts/` |
 
 Resolve exact document names through the surface or owning workflow; a broad
-surface route does not approve every nested artifact shape. No format blacklist,
-writer registry or pre-save hook has been installed. Repository checks cover only
+surface route does not approve every nested artifact shape. Root-path validation admits the current surfaces and repository configuration
+files listed in `scripts/lib/hooks/surfaces.mjs`. No inherited format blacklist,
+writer registry has been installed. The configured structured-write hook uses the
+same root rules; actual host activation remains unverified. Repository checks cover only
 the checks documented in [quality gates](../quality/quality-gates.md).
 
 Same-repository application implementation is an unresolved setup choice. Do not

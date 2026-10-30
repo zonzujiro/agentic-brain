@@ -423,11 +423,10 @@ export function buildPlan({ projects, changes = [], explicitProjects = [], all =
     byProject.set(slug, item);
   }
   const corpusProjects = [...new Set([...projects, ...historicalProjects])].sort();
-  const activeProjects = corpusProjects.filter((id) => !id.startsWith("shipped:"));
   const changed = all
     ? [...corpusProjects]
     : globalRelationsChanged
-      ? [...new Set([...activeProjects, ...byProject.keys()])].sort()
+      ? [...corpusProjects]
       : [...byProject.keys()].sort();
   const unknown = changed.filter((slug) => !corpusProjects.includes(slug));
   if (unknown.length) throw new Error(`changed semantic entry is not present in the active or shipped corpus: ${unknown.join(", ")}`);
@@ -443,7 +442,7 @@ export function buildPlan({ projects, changes = [], explicitProjects = [], all =
     for (let right = left + 1; right < corpusProjects.length; right += 1) {
       const pair = [corpusProjects[left], corpusProjects[right]];
       const selected = all
-        || globalRelationsChanged && pair.every((id) => !id.startsWith("shipped:"))
+        || globalRelationsChanged
         || pair.some((id) => byProject.has(id));
       if (!selected) continue;
       if (renameKeys.has(pair.join("|"))) continue;
@@ -605,7 +604,7 @@ function readRelations(relationsPath, projectsRoot, source, entriesById = new Ma
   const notSame = Array.isArray(parsed.not_same) ? parsed.not_same : [];
   if (![...entriesById].some(([id]) => id.startsWith("active:"))) return { not_same: notSame };
   return {
-    not_same: notSame.map((pair) => pair.map((slug) => `active:${slug}`)).filter((pair) => pair.every((id) => entriesById.has(id))),
+    not_same: notSame.map((pair) => pair.map((slug) => slug.startsWith("production-features/") ? `shipped:${slug.slice("production-features/".length)}` : `active:${slug.replace(/^projects-in-progress\//, "")}`)).filter((pair) => pair.every((id) => entriesById.has(id))),
   };
 }
 

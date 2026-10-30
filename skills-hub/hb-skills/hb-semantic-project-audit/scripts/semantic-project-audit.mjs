@@ -127,7 +127,7 @@ function validateSchemas() {
 function publicPlan(plan) {
   const { pairs: _pairs, ...summary } = plan;
   const comparison_target_coverage = plan.global_relations_changed
-    ? "Every active-to-active pair for the active-only relations ledger, plus normal combined-corpus coverage for any active-project or shipped-feature entry changed in the same range; known old/new identities of one Git rename are excluded."
+    ? "Every active/shipped corpus pair for the qualified relations ledger; known old/new identities of one Git rename are excluded."
     : "Every changed active-project or shipped-feature entry against every other entry in that combined corpus; changed-to-changed pairs once, except the known old/new identities of one Git rename.";
   return { ...summary, comparison_target_coverage };
 }

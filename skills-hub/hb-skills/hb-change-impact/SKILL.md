@@ -131,7 +131,9 @@ abandoning a session. The controller validates coverage, citations and unchanged
 inputs; the agent judges meaning. Its compatibility field `writer_map` carries
 the current write-boundary contract, not a historical Decision.
 
-No automatic push interception or CI attestation guard is installed. Optional
+Bounded direct-command interception and a PR attestation guard are implemented;
+local activation and limits are documented in `governance/operations/agent-hooks.md`.
+Host enforcement remains unverified until the configured hooks are trusted. Optional
 `--push` is permitted only after all batches and actual delivery authorization;
 never invent `--approved-by` or a resolution to pass a gate. The semantic audit
 and this producer review have separate results.

@@ -10,13 +10,14 @@ convert a waiver into evidence.
 
 For code or extraction changes, run `npm test` and `npm run check`. Inspect the
 diff and describe what the tests establish. This initial checker validates local
-Markdown targets, source footnotes and Decision structure/lineage, and rejects selected private integration
+Markdown targets, source footnotes and Decision structure/lineage, skill metadata/discovery and root-path ownership, and rejects selected private integration
 markers. It does not validate heading anchors, every Markdown syntax, remote URLs,
 secret absence, provenance rights, source truth, or connector behavior.
 
 The semantic and producer controllers support bounded agent review, separately
-from these structural checks. Fuller gate profiles and automatic agent-host
-enforcement remain pending; local Git checks do not satisfy those requirements.
+from these structural checks. The shared file engine and bounded delivery guards are implemented;
+[agent-host activation](../operations/agent-hooks.md) remains unverified. Local
+Git checks do not satisfy that acceptance requirement.
 
 ## User-feedback exemption
 
@@ -45,3 +46,14 @@ The change-impact scanner returns candidates from explicit references and shared
 source identifiers. Review the full affected population separately. Missing
 baselines, external sources, hidden host configuration and semantic relationships
 limit automatic discovery; no result is a proof that nothing else is affected.
+
+## Authoring advisories and delivery
+
+The shared engine reports possible empty sections, vague evidence wording, cited
+source gaps and relevant uncited peers as advisories. They invite semantic review;
+they do not fail structural CI or require backlinks to unrelated documents.
+`node scripts/hooks/run-engine.mjs --file <path>` shows both errors and advisories.
+
+PR audit checks regenerate plans for the event's actual base/head commits and
+compare the body attestations. They validate binding and format, not that an owner
+actually approved a finding. See the [delivery contract](../operations/agent-hooks.md#delivery-binding).

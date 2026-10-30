@@ -89,8 +89,9 @@ Check the target for:
 - applicability and remaining uncertainty visible;
 - valid local links and footnote definitions in the sandbox.
 
-Use the repository's exported `validateRepository(sandboxPath)` for local link
-and footnote checks when running Node. It is read-only. Also inspect the prose:
+Use the repository's exported `validateDocumentSandbox(sandboxPath)` for local link
+and footnote checks when running Node. This read-only function intentionally omits
+repository layout and skill-index validation for the isolated two-file exercise. Also inspect the prose:
 mechanical success cannot determine whether the lesson follows from the evidence.
 Do not claim that repository tests validate the user's sandbox prose.
 

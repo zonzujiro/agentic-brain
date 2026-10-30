@@ -49,14 +49,14 @@ installed into Ivan's main checkout. Hooks inspect the current working tree;
 they do not isolate staged content or prove the pushed revision passed. Hosted
 CI checks committed content separately. Existing custom hooks remain untouched.
 
-## Missing or still under review
+## Acceptance status after the remaining-mechanics increment
 
 | Area | State and reason |
 |---|---|
-| Agent tool/lifecycle hook adapters and shared rule engine | Not migrated or validated in an agent host. Git hooks are not a substitute. Inventory portable rules and test actual supported events before claiming enforcement. |
-| Automatic semantic/producer push interception and PR attestation guards | Not installed. Controllers can generate local results; CLI optional push is only usable within explicit delivery authorization. Guards need adaptation away from source-specific sync and host dependencies. |
-| Remaining source surface/skill shape validators and automatic adopter | Not migrated. Current agent review and limited checks are explicit; preserving useful portable mechanics remains T2 work, not an approved exclusion. |
-| Identifier overlap validation | Not installed. Semantic controller is not a replacement for deterministic identifier checks. Metadata must be adapted without restoring team/notification requirements. |
+| Agent tool/lifecycle hooks and shared engine | Implemented and fixture-tested; configuration prepared. Actual host outcomes pending user trust; details below. |
+| Bounded delivery interception and PR attestation guards | Implemented for actual repository/head input and fixture-tested. Live hook and hosted PR execution remain unverified; supported command scope is explicit. |
+| Surface/skill validation and adopter | Implemented against current contracts; reviewed imports preserve bytes and reject collisions. |
+| Identifier overlap validation | Implemented with coverage limits and warning-only findings; no mandatory company metadata. |
 | Full workflow behavior evaluation | T5 remains pending; no kit selected. Local trials and deterministic tests are not a model evaluation suite. |
 | Complete setup journey and worked small-project lifecycle | T3 remains pending; the project starter and sandbox lesson are partial inputs. |
 
@@ -75,3 +75,47 @@ No new scope decision is needed to retain the portable controllers. Their tempor
 manual-only adaptation was replaced once dependency inspection showed the core
 was portable. T2 remains in progress because the missing mechanics above are real
 work, not because Ivan must approve their continued investigation.
+
+## Remaining-mechanics increment
+
+The next increment implements the previously missing portable pieces. Local
+validation now passes 116 tests and repository checks. Independent disposable
+adoption and delivery review found defects in onboarding compatibility, permissions,
+source symlinks, large-group clearance guidance, command working-directory binding
+and PR-body triggers; those were corrected and exercised before delivery.
+
+| Mechanic | Implementation and verification |
+|---|---|
+| Surface and skill shape | Current root ownership, minimal active README, strict skill block metadata and canonical relative discovery; no team/notification requirements |
+| Identifier overlap | Source claim-position, case-sensitive identifier, clustering, dormancy and coverage mechanics; 27 generic tests retained plus qualified-identity regression; findings remain advisory |
+| Relations | Legacy active slugs and qualified active/shipped members; exact-group clearance, complete corpus routing when the ledger changes; malformed input fails visibly |
+| Adoption | Preview-only default, reviewed byte digest, exclusive target creation, metadata/mode preservation, explicit optional discovery link, no source execution or overwrites |
+| Shared rules | Same root/link/footnote/private-marker engine in checks and hook mounts; source empty-section, hedge, linked-gap and peer rules remain advisories |
+| Lifecycle | Configured SessionStart, structured pre/post-write and Stop mounts; one repair continuation, no authored-content rewrite or transcript storage; fixture tests pass |
+| Delivery | Bounded direct-command interception, explicit actual checkout/head binding and both current audit digests; local tests reject stale/hidden attestations, another repository's event and workdir overrides |
+| PR CI | Read-only job checks the event's head SHA and base repository; body edits rerun the guard. Local committed-fixture tests pass; actual hosted PR execution is unverified because no PR was authorized |
+
+The source root-document validator exclusively covered handoffs, RFCs, test plans
+and BI requirements. Those artifact writers are outside the accepted retained
+set, so their templates and required sections were not installed. The portable
+active README contract is checked without importing the source company metadata.
+Source planning/QA regenerators, role setup, format exceptions and session-based
+external evidence assertions are also absent by their established scope boundary.
+Decision rules reuse the already adapted validator. The final whole-tree check
+replaces session-attributed dirty queues; it reports pre-existing issues without
+claiming the current turn caused them. Connector receipts remain T4 work.
+
+### Live hook acceptance still blocked on trust
+
+A disposable copy with the new hook configuration was exercised using Codex CLI
+0.144.2, ephemeral read-only mode and the existing login. It ran `pwd` successfully,
+but reported no identifiable Agentic Brain hook context. Generic host event labels
+were present; those are not proof that these repository handlers executed.
+No trust records or approval settings were changed and no bypass flag was used.
+
+The [Codex hook contract](https://learn.chatgpt.com/docs/hooks) requires trust for
+project layers and exact non-managed hook definitions. Configuration is now
+prepared at `.codex/hooks.json`; Ivan must review/trust it through `/hooks` before
+we can demonstrate the real session, denied write, allowed write and final-check
+outcomes. The user-owned trust step blocks T2 host acceptance, not code authoring.
+See [local hook scope](../../governance/operations/agent-hooks.md) for limitations.

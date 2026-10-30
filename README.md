@@ -11,12 +11,13 @@ complete release or a drop-in replacement for its source, Harmony Brain.
 No open-source license or publication clearance has been established yet.
 
 Available now: evidence and communication guidance, fifteen adapted workflows,
-Codex repository discovery, source-link and Decision checks, bounded semantic and
-producer audit controllers, and optional local Git checks. Deterministic tests
+Codex repository discovery, source-link, Decision, skill and root checks, identifier-overlap reporting, bounded
+semantic/producer controllers, reviewed adoption and optional local Git checks. Deterministic tests
 and hosted CI support the mechanics; agent review still owns meaning.
 
-Agent tool hooks, automatic audit enforcement, connector adapters and model
-evaluations are not installed. The [T2 inventory](projects-in-progress/agentic-brain/t2-mechanics.md)
+Local agent hooks and delivery guards are implemented and configured; live hook
+activation remains unverified pending user trust. Connector adapters and model
+evaluations remain deferred. The [T2 inventory](projects-in-progress/agentic-brain/t2-mechanics.md)
 separates retained mechanics, tested host behavior and remaining migration work.
 
 ## Start here

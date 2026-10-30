@@ -11,8 +11,8 @@ description: |
 Use this repo-local skill to import existing skills from another folder into
 `skills-hub/` without forcing the user to normalize package structure by hand.
 
-This workflow adopts reviewed source into the repository. It does not install
-host indexes or execute imported scripts during discovery.
+This workflow adopts reviewed source into the repository. It does not execute imported scripts. Host discovery links require an explicit
+`--link` option after the intended installation is authorized.
 
 ## Accepted Inputs
 
@@ -69,8 +69,26 @@ A new dependency or external write requires the task's actual authorization.
 ### 4. Prepare the concrete import
 
 Copy only the reviewed package subset into its resolved owner. Preserve source
-logic unless an adaptation is justified and recorded. There is no automatic
-adopter installed: use ordinary file tools and inspect the resulting diff.
+logic unless an adaptation is justified and recorded. For one already normalized,
+reviewed package, preview with:
+
+```sh
+node skills-hub/hb-skills/hb-adopt-skill/scripts/adopt_skills.mjs --source /path/to/package
+```
+
+The helper defaults to this repository; `--root` can name a disposable fixture or
+another explicitly authorized Brain. Inspect the file list and digest. Apply the
+reviewed bytes with `--apply --expected-digest <digest>`. Add `--link` only when
+repository host discovery is part of the request. Without it, the package is
+copied but the discovery check remains pending until its link is explicitly added.
+
+The helper refuses existing targets and discovery entries, changed source digests,
+package symlinks, hidden local machinery and unsupported metadata. It preserves
+bytes and permissions, and executes no package code. It does not infer descriptions,
+rename packages, move scripts, or discover nested packages automatically. Review
+those adaptations in temporary storage first, then preview that reviewed package.
+For multiple packages, repeat the bounded preview/apply sequence; prior successful
+imports remain visible if a later package is blocked.
 For this extraction, record source hashes and adaptations in the existing
 extraction manifest. For unrelated future adoption, use the existing project
 working record rather than inventing a global registry. Never modify the source
@@ -93,5 +111,5 @@ each PR creation and never post comments without authorization for that action.
 - Never overwrite source or target silently.
 - Never invent a successful migration for unresolved dependencies.
 - Keep executable logic in reviewed scripts rather than opaque shell snippets.
-- Do not create host-discovery symlinks or install dependencies as an incidental import.
+- Do not create host-discovery symlinks without explicit installation scope; never install dependencies as an incidental import.
 - Keep canonical output ownership unambiguous; similar names are not enough to prove a conflict.

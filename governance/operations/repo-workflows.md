@@ -9,7 +9,7 @@ the initial allowed contents; new durable shapes need an explicit proposal.
 
 Repository evolution belongs in projects-in-progress/agentic-brain/. General
 rules belong in governance/. Scripts implement mechanical behavior. Adapted workflow source is listed in [skills](../../skills-hub/README.md); Codex CLI
-discovery is verified. Optional Git checks exist; agent tool hooks are not installed. Resolve material writes through the
+discovery is verified. Optional Git checks exist; [agent tool hooks](agent-hooks.md) are implemented and configured but live activation remains unverified. Resolve material writes through the
 [write-boundary contract](../artifacts/artifact-write-boundary.md).
 
 ## Changes and authority
