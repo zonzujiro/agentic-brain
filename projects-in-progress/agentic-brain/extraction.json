@@ -212,7 +212,7 @@
       "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "3cf2ca35c4171e9cde15d8ed67ed6a958fb5803802dcf47b0c55f0c3d1db58aa",
-      "adaptation": "Retained original two-stage active-agent controller workflow, bounds, evidence rules, input freshness, advisory semantics and cleanup. Removed operational planning, private metadata, uninstalled CI/producer attestations and evaluation claims; adapted remote main and explicit host limitations."
+      "adaptation": "Retained original two-stage active-agent controller workflow, bounds, evidence rules, input freshness, advisory semantics and cleanup. Removed operational planning, private metadata, uninstalled CI/producer attestations and evaluation claims; adapted remote main and explicit host limitations. Updated delivery guidance to point to the implemented bounded hook and PR attestation checks; semantic review remains agent-owned."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-onboard/SKILL.md",

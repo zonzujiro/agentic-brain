@@ -77,8 +77,9 @@ At PR/push readiness, derive scope from committed content:
 
 If the same change also adds or changes artifact-producing machinery, complete
 the Producer Conflict Review in `hb-change-impact` before this skill's push
-completion step. Its manual review result is separate from the project context audit. No producer
-attestation or push interception has been installed.
+completion step. Its review result is separate from the project context audit.
+The bounded delivery hook requires both current attestations; see the
+[delivery contract](../../../governance/operations/agent-hooks.md#delivery-binding).
 
 ```bash
 node skills-hub/hb-skills/hb-semantic-project-audit/scripts/semantic-project-audit.mjs prepare --no-working-tree
@@ -88,7 +89,7 @@ Default committed delivery refreshes `origin/main` before preparation and
 again when advancing or finalizing. Failed Git access stops the audit. An
 explicit `--base` other than `origin/main` is a pinned diagnostic/comparison
 choice and is not automatically fetched. Neither path merges main into the
-reviewed branch. Current CI does not invoke the audit planner.
+reviewed branch. PR CI invokes the planner to check attestation binding.
 The running controller and schemas must match the combined tree's audit rules.
 
 If the result is `not-needed`, no semantic call is required. Otherwise:
@@ -185,11 +186,13 @@ durable behavior or shared truth.
 
 ## CI and host boundary
 
-Current CI runs deterministic tests and repository checks. It does not enforce
-semantic attestations, run model evaluations or invoke this audit on every push.
+Current CI runs deterministic tests and repository checks. The PR job also checks
+semantic and producer attestations against regenerated committed-input plans;
+it does not perform semantic review or run model evaluations.
 The controller can produce a digest-bound local result; that binds inspected
 inputs and validated response structure, not semantic truth or host identity.
-No agent tool hook or connector observer is installed. Use the active-agent
+Local agent hooks are configured; activation requires host trust and actual event
+verification. Connector observation remains deferred. Use the active-agent
 prepare/advance/finalize path without an additional model account. The optional
 `run` path requires the user's configured Codex CLI and reports actual backend
 failures; it is not the selected T5 evaluation kit.
