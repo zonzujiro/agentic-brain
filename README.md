@@ -4,6 +4,10 @@ A foundation for building your own version-controlled context system for people
 and AI agents. Use one project or many while preserving the operating model: evidence,
 decisions, roles, flows, reusable workflows and explicit ownership.
 
+Follow the presentation for more details, if you want.
+
+https://github.com/zonzujiro/agentic-brain-deck
+
 ## Current state
 
 Private extraction in progress. This is the first working foundation, not a
