@@ -11,7 +11,12 @@ export function handle(payload, expectedRoot) {
   const root = repoRoot(payload);
   if (fs.realpathSync(root) !== fs.realpathSync(expectedRoot)) return { systemMessage: 'Brain hook skipped: event belongs to another repository.' };
   const event = payload.hook_event_name;
-  if (event === 'SessionStart') return context(event, 'Agentic Brain local SessionStart hook ran. Read AGENTS.md, README.md, ARCHITECTURE.md and governance/operations/repo-workflows.md. Resolve write boundaries before edits. Run npm test and npm run check before delivery. Other hook events require separate host trust. These hooks do not observe connectors, prove evidence truth, or grant write/push/PR permission.');
+  if (event === 'SessionStart') {
+    let preference='';
+    const local=path.join(root,'AGENTS.local.md');
+    try { if(fs.lstatSync(local).isFile()) { const role=fs.readFileSync(local,'utf8').match(/^Role: (Creator|Builder)$/m)?.[1]; if(role)preference=` Local interaction preference: ${role}; this changes explanation detail only.`; } } catch(e){if(e.code!=='ENOENT')throw e;}
+    return context(event, 'Agentic Brain local SessionStart hook ran. Read AGENTS.md, README.md, ARCHITECTURE.md and governance/operations/repo-workflows.md. Resolve write boundaries before edits. Run npm test and npm run check before delivery. Other hook events require separate host trust. These hooks do not observe connectors, prove evidence truth, or grant write/push/PR permission.' + preference);
+  }
   if (event === 'PreToolUse') {
     const findings = [];
     for (const target of writtenPaths(payload, { includeRemoved: false })) {

@@ -3,6 +3,7 @@ name: hb-adopt-skill
 description: |
   Repo-local Agentic Brain skill for adopting one or more existing skills into
   the canonical skills-hub structure.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"skill-change","artifacts":[{"id":"skill-package","role":"final-writer","paths":["skills-hub/hb-skills/{skill}/"]}]}}
 ---
 
 
@@ -113,3 +114,12 @@ each PR creation and never post comments without authorization for that action.
 - Keep executable logic in reviewed scripts rather than opaque shell snippets.
 - Do not create host-discovery symlinks without explicit installation scope; never install dependencies as an incidental import.
 - Keep canonical output ownership unambiguous; similar names are not enough to prove a conflict.
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `skill-change`.
+Use `governance/quality/evidence/source-lanes.md`: Skill Change / Package Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

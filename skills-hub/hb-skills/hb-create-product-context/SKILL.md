@@ -7,14 +7,16 @@ description: |
   other grounded product sources, or says "create product context", "create a
   product overview", "document the product", or "create a knowledge base for
   this product area". Do not use for single-feature documentation.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"standard-authoring","artifacts":[{"id":"product-overview","role":"final-writer","paths":["knowledge-hub/{document}.md"]}]}}
 ---
 
 
 # Create Product Context
 
 Read actual source contents through available, user-configured tools or local
-files. No connector, gateway or automatic evidence observer is required or
-installed. Use the evidence policy to choose sources by the claims they support.
+files. No fixed connector or gateway is required. Automatic access recording follows
+`governance/quality/evidence/access-records.md`; report unsupported or inactive
+channels as gaps. Use the evidence policy to choose sources by claim support.
 
 ## Use This Skill When
 
@@ -80,7 +82,8 @@ put a direct source link beside each material sourced statement when sufficient,
 or a concise end-of-file footnote when verification context matters.
 
 Keep inspected read areas and material limitations in chat or the working
-record. Never invent access receipts; this repository has no evidence observer.
+record. Never invent access receipts; apply `governance/quality/evidence/access-records.md`
+and preserve its host and transport coverage limits.
 
 ## Flow
 
@@ -243,3 +246,12 @@ never post PR comments without explicit authorization for that action.
 - NEVER invent product, roadmap, persona, or metrics facts to make the doc
   feel complete
 - NEVER overwrite an existing product overview outside the authorized scope or without showing the resulting diff
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `standard-authoring`.
+Use `governance/quality/evidence/source-lanes.md`: PM / Product Context.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

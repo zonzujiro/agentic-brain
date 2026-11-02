@@ -7,14 +7,16 @@ description: |
   existing repo sources, or says "create feature doc", "document this feature",
   "fill in the feature template", or "write a feature knowledge doc". Do not use
   for product-level overviews or active in-progress feature planning.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"standard-authoring","artifacts":[{"id":"feature-knowledge","role":"final-writer","paths":["production-features/{feature}/feature-knowledge.md"]}]}}
 ---
 
 
 # Create Feature Doc
 
 Read actual source contents through available, user-configured tools or local
-files. No connector, gateway or automatic evidence observer is required or
-installed. Use the evidence policy to choose sources by the claims they support.
+files. No fixed connector or gateway is required. Automatic access recording follows
+`governance/quality/evidence/access-records.md`; report unsupported or inactive
+channels as gaps. Use the evidence policy to choose sources by claim support.
 
 ## Use This Skill When
 
@@ -105,7 +107,8 @@ checks only from the current surface contract, never from historical Decisions.
 ## Evidence
 
 Keep inspected read areas and material limitations in chat or the working
-record. Never invent access receipts; this repository has no evidence observer.
+record. Never invent access receipts; apply `governance/quality/evidence/access-records.md`
+and preserve its host and transport coverage limits.
 
 Read and apply the shared
 [grounding standard](../../../governance/quality/evidence/grounding.md#claim-level-grounding-footnotes).
@@ -382,3 +385,44 @@ explicit gap.
 4. No generic risk padding. Risks must be specific to the feature or preserved
    as missing.
 5. No invented owners, launch dates, roadmap commitments, or target KPI values.
+
+## Implementation search depth
+
+Grounding must be claim-driven:
+
+- first derive a implementation search plan from the source package: feature slug,
+  package names, component names, UI labels, API names, event names, ticket
+  keys, experiment/spec names, and links from the bootstrap docs
+- search filenames and exact symbols/strings before opening files
+- inspect only candidate files that directly match the claim, plus close
+  neighbors such as imports, tests, manifests, or package entrypoints when they
+  explain the behavior
+- do not reopen `product-knowledge/` as a default duplicate check for product
+  facts already projected into `production-features/`
+- record queries and paths checked when grounding is partial or when no match is
+  found, so the gap is auditable
+
+Implementation implementation evidence is source support, not the final artifact.
+Do not copy a current implementation report, API inventory, ownership map,
+runtime-state dump, or coverage snapshot into `feature-knowledge.md` as durable
+Brain truth. Synthesize only stable shipped behavior or keep the implementation
+detail as a source-package note, grounding note, or visible gap.
+
+Good grounding targets include:
+
+- packages whose names, exports, or manifests match the feature/component
+- tests or fixtures covering the user behavior
+- public APIs, manifests, action definitions, experiment/spec keys, or BI event
+  emitters named by the source evidence
+- existing Brain production-feature bootstrap docs:
+  `production-features/{feature}/README.md` and
+  `production-features/{feature}/feature-knowledge.md`
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `standard-authoring`.
+Use `governance/quality/evidence/source-lanes.md`: Production Feature Knowledge.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

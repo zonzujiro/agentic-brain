@@ -5,6 +5,7 @@ description: |
   investigation, or initiative under projects-in-progress. Resolves identity,
   overlap, metadata, the initial semantic capsule, solution framing, and the
   first Markdown project brief.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"standard-authoring","artifacts":[{"id":"active-project","role":"final-writer","paths":["projects-in-progress/{project}/README.md"]},{"id":"project-brief","role":"final-writer","paths":["projects-in-progress/{project}/artifacts/project-brief-{project}.md"]}]}}
 ---
 
 
@@ -59,6 +60,10 @@ Do not invent alternatives simply to fill a section.
 
 ### 4. Prepare the minimal project
 
+Use the active-project README capsule contract: one H1 and a meaningful lead,
+`## Scope and responsibilities` and `## Boundaries and dependencies`, within
+100 lines and 10,000 characters. These bounds keep comparison useful; they are
+not a reason to discard detailed context from its owning documents.
 Use `projects-in-progress/{project}/README.md` for purpose, scope and
 responsibilities, boundaries and dependencies, supported context and open questions.
 Add `artifacts/project-brief-{project}.md` when the full background, users,
@@ -76,8 +81,10 @@ starting context does not authorize adding an implementation surface.
 ### 5. Check overlap and preserve existing work
 
 Compare the proposed purpose and boundary against actual nearby project content.
-There is no automatic overlap gate installed yet. Report the searched area and
-any ambiguity; do not describe a name search as semantic proof of uniqueness.
+Run `node scripts/validate_project_overlap.mjs` for identifier candidates, then
+read relevant matches. Use `hb-semantic-project-audit` for meaningful context
+changes before PR readiness. Both are implemented; matches remain advisory and
+need semantic review. Report coverage and ambiguity, not a proof of uniqueness.
 For a repair, show the changed fields and preserve unrelated authored content.
 For a complete existing project, do not recreate it or refresh dates unnecessarily.
 Use the current request's authorization for the resolved start or repair. Ask only
@@ -91,3 +98,12 @@ Run `npm test` and `npm run check`; these do not certify semantic uniqueness.
 Report exact files and gaps. Offer decision authoring or source-grounded context
 work as appropriate. Do not turn this into a mandatory multi-role process.
 Commit or push only within authorization; each PR creation needs explicit approval.
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `standard-authoring`.
+Use `governance/quality/evidence/source-lanes.md`: Active Feature Bootstrap.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

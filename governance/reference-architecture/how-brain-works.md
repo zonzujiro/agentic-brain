@@ -60,3 +60,21 @@ Explain how these parts affect one another, with an example. Distinguish present
 mechanics from the intended complete system. Do not infer completion from a file
 name or planned task. This route is an initial explanation, not yet an evaluated
 completeness guarantee.
+
+## Roles and operating flows
+
+Creator and Builder select how much technical detail the root agent presents;
+they do not select permission or evidence strength. The operating flow begins by
+classifying the request and resolving the artifact owner. The agent reads the
+relevant evidence, distinguishes user intent from an implementation proposal,
+checks downstream effects and writes through the owner. During working drafts,
+gates identify repairs and honest gaps; at promotion, they can block unsupported
+claims from becoming accepted context. A resolved question also triggers review
+of its actual consequences, not just deletion from an open-question list.
+
+The [operations guide](../operations/repo-workflows.md) routes to the full role,
+feature, governance, PR and user-interaction contracts. The
+[writer map](../artifacts/artifact-writer-map.md) separates authoring, review and
+validation responsibilities. The [capability map](capabilities.md) explains why
+each part exists. These detailed owners complement this walkthrough; this page
+is not their replacement.

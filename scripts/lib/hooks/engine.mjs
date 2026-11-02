@@ -1,14 +1,15 @@
 // Shared deterministic file rules, mounted by repository checks and local hooks.
 // Adapted from the source report engine; no session evidence or connector claims.
 import fs from 'node:fs';
+import { validateRootDoc } from '../root-docs/validator.mjs';
 import { spawnSync } from 'node:child_process';
 import path from 'node:path';
 import { hedgeRule, emptyHeadingRule, gapConsumptionRule, peerSurfacingRule } from './advisories.mjs';
-import { rootPathViolation } from './surfaces.mjs';
+import { rootPathViolation, artifactFormatViolation } from './surfaces.mjs';
 import { validateFootnotes, validateChangedSourceFootnoteLinks } from '../markdown/footnotes.mjs';
 
 export function pathFindings(file) {
-  const violation = rootPathViolation(file);
+  const violation = rootPathViolation(file) ?? (artifactFormatViolation(file) ? { rule: "artifact-shape/format", message: artifactFormatViolation(file) } : null);
   return violation ? [{ file, line: 1, ...violation, severity: 'deny' }] : [];
 }
 export function report(root, file, { content, checkPath = true, isNewFile } = {}) {
@@ -26,6 +27,7 @@ export function report(root, file, { content, checkPath = true, isNewFile } = {}
   const add = (rule, message, line = 1) => findings.push({ file, line, rule, message, severity: 'error' });
   if (/(?:https?:\/\/(?:npm\.dev\.wixpress\.com|mcp-s\.wewix\.net|bo\.wix\.com)|@wix\/|wix-private\/)/i.test(content)) add('integration/private-reference', 'private integration reference');
   if (file.endsWith('.md')) {
+    validateRootDoc({ filePath: file, markdown: content }).errors.forEach(message => add('document/standard', message));
     validateFootnotes(content).forEach(message => add('grounding/footnotes', message));
     validateChangedSourceFootnoteLinks(content, { filePath: file, repoRoot: root }).forEach(({ message, line }) => add('grounding/local-link', message, line));
   }

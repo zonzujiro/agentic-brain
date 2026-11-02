@@ -7,7 +7,7 @@ recorded in [T2 mechanics](../../projects-in-progress/agentic-brain/t2-mechanics
 
 ## Review and enable
 
-Read the definitions and the two scripts they invoke under `scripts/hooks/`.
+Read the definitions and the scripts they invoke under `scripts/hooks/`.
 In Codex opened in this repository, use `/hooks` to review and trust those exact
 definitions. Changed definitions require review again. For another authorized
 Brain checkout, `node scripts/install-agent-hooks.mjs` previews the configuration;
@@ -40,7 +40,7 @@ Hooks do not rewrite authored content. Decision structure and lineage use the
 existing repository validator during the final check. Hook exceptions report a
 visible failure and may fail open; unsupported tools, shell programs and missing
 trust are coverage gaps. This is not a security boundary or proof of semantic
-quality. External connector observation and actions remain outside T2.
+quality. Connector-wide identity mapping and live observation coverage remain T4 work.
 
 ## Delivery binding
 
@@ -66,3 +66,25 @@ requires checkout HEAD to match that head, and regenerates committed-input plans
 PR-body edits rerun it. There is no inherited source-repository title exemption.
 Tests exercise this guard locally; an actual hosted PR run remains unverified
 until an authorized PR exists. Main-branch CI runs structural checks and tests.
+
+## Freshness, source observation and Claude
+
+Both `.codex/hooks.json` and `.claude/settings.json` mount freshness before
+supported writes and the access observer after read tools. Claude additionally
+mounts `PostToolUseFailure`; a failed operation cannot become a successful receipt.
+SessionStart reads the optional saved role. `scripts/sync_skill_indexes.mjs --check`
+checks both discovery trees; `--apply` adds missing links without replacing custom
+entries. The host installer accepts `--host=claude` and preserves existing files.
+
+The current checkout has installed Git hooks, including post-checkout role copying.
+This does not establish host hook trust or connector-wide observation. Tests prove
+local adapters and disposable Git operations; verify actual events separately.
+See [access coverage](../quality/evidence/access-records.md) and
+[freshness](flows/brain-checkout-freshness.md).
+
+Codex configuration and trust behavior follow the
+[official hook contract](https://learn.chatgpt.com/docs/hooks). Claude configuration
+uses its [hook contract](https://code.claude.com/docs/en/hooks). Claude's
+[AGENTS loading](https://code.claude.com/docs/en/memory#agentsmd) depends on version
+and instruction settings; confirm the loaded file in the host. Do not manufacture
+an instruction copy or change the user's settings to hide a loading gap.

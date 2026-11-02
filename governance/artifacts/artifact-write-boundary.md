@@ -26,7 +26,8 @@ If the boundary cannot be resolved from the operating rules, surface README,
 or an implemented workflow contract, stop the dependent write and follow the
 change proposal process in [operating rules](../operations/repo-workflows.md).
 Use [change-impact review](../../skills-hub/hb-skills/hb-change-impact/SKILL.md).
-The inherited writer map has not been migrated; do not assume an old writer is available.
+Use the [writer map](artifact-writer-map.md) for installed routes and explicit
+unavailable writers.
 
 ## When It Runs
 
@@ -83,8 +84,11 @@ repository's broader path exceptions. Current routes are:
 
 Resolve exact document names through the surface or owning workflow; a broad
 surface route does not approve every nested artifact shape. Root-path validation admits the current surfaces and repository configuration
-files listed in `scripts/lib/hooks/surfaces.mjs`. No inherited format blacklist,
-writer registry has been installed. The configured structured-write hook uses the
+files listed in `scripts/lib/hooks/surfaces.mjs`. Restricted executable, binary and data formats require an explicit owning path
+in that shared module. Scripts, host configuration, test/evaluation fixtures and
+existing machine data contracts are admitted; arbitrary code or data files in
+knowledge and project prose surfaces are rejected. The writer map is agent
+guidance, not a deterministic write API. The configured structured-write hook uses the
 same root rules; actual host activation remains unverified. Repository checks cover only
 the checks documented in [quality gates](../quality/quality-gates.md).
 

@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { validateRootDoc } from '../lib/root-docs/validator.mjs';
+const filePath='projects-in-progress/demo/engineering/rfc-external-tool.md';
+const sections=['Architecture overview','Implementation approach','Reuse of existing product parts','Integrations','External ownership','Error handling','Edge conditions','Backward compatibility','Risks and unknowns','Assumptions and unknowns','BI event integration','Monitoring','Testing considerations','Performance impact','AI usage'];
+const valid=sections.map(h=>`## ${h}\n\nConcrete applicable explanation.\n`).join('\n');
+test('externally authored complete RFC passes without a Brain writer',()=>assert.deepEqual(validateRootDoc({filePath,markdown:valid}).errors,[]));
+test('headings in fenced templates do not satisfy document standard',()=>assert.equal(validateRootDoc({filePath,markdown:'```md\n'+valid+'\n```'}).ok,false));
+test('empty required sections and placeholders fail',()=>{assert.equal(validateRootDoc({filePath,markdown:valid.replace('Concrete applicable explanation.','')}).ok,false);assert.equal(validateRootDoc({filePath,markdown:valid+'\nTODO'}).ok,false);});
+test('meaning review remains separate from structural success',()=>{const unsupported=valid.replace('Concrete applicable explanation.','All users have received this release.');assert.equal(validateRootDoc({filePath,markdown:unsupported}).ok,true);});
+test('test plan requires actual flow coverage mapping',()=>{const result=validateRootDoc({filePath:'projects-in-progress/demo/quality/test-plan.md',markdown:'# Plan\n'});assert.ok(result.errors.some(e=>e.includes('map UF-')));});

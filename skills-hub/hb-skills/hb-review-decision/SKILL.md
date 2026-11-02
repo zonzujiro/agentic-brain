@@ -3,6 +3,7 @@ name: hb-review-decision
 description: |
   Repo-only Agentic Brain second-opinion review for a new Decision or a
   meaning-changing Decision edit.
+metadata: {"brain":{"ownership_class":"validator-helper","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"governed-change"}}
 ---
 
 
@@ -111,3 +112,12 @@ contradictions. A visible gap is preferable to a fabricated answer.
 - Use `scripts/validate_decisions.mjs` for structural checks, but keep semantic
   review separate because a script cannot prove that evidence, meaning, and
   consequences are correct.
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `governed-change`.
+Use `governance/quality/evidence/source-lanes.md`: Decision / Preflight / Repo Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

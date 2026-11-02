@@ -3,6 +3,7 @@ name: hb-add-knowledge-hub-doc
 description: |
   Canonical source-repo Agentic Brain skill for authoring or updating one
   knowledge-hub document.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"standard-authoring","artifacts":[{"id":"shared-reference","role":"final-writer","paths":["knowledge-hub/{document}.md"]}]}}
 ---
 
 
@@ -62,7 +63,7 @@ Waiver rule:
   writing. Wrong targets and unsupported claims cannot be waived by the agent.
 - A durable hub contract, subtree or boundary change needs change-impact review
   and the owner approval required by operating rules. These are agent checks,
-  not installed named gate profiles.
+  not automatic validator enforcement.
 - Weakly grounded reusable domain claims must stay as visible gaps,
   single-source claims, or user-confirmed assumptions.
 
@@ -90,7 +91,7 @@ package manifests, or helper scripts into `knowledge-hub/`.
 ## Evidence
 
 Keep evidence and review notes in chat or the existing working artifact.
-No hook or transport observer is installed. Describe inspected source areas and
+Use `governance/quality/evidence/access-records.md` for automatic recording and its coverage limits. Describe inspected source areas and
 material access gaps honestly; never invent a machine receipt.
 
 Read and apply the shared
@@ -244,3 +245,12 @@ without explicit authorization for that action.
   shipped feature snapshots
 - NEVER introduce a new first-level family silently
 - NEVER invent reusable domain facts to make the doc feel complete
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `standard-authoring`.
+Use `governance/quality/evidence/source-lanes.md`: Knowledge Hub Authoring.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

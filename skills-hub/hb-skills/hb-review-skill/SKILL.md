@@ -5,6 +5,7 @@ description: |
   skills before or during review. Use when an author adds or changes
   a skill and wants Brain to inspect trigger fit, ownership boundaries,
   handoffs, artifact contracts, and hidden runtime assumptions.
+metadata: {"brain":{"ownership_class":"validator-helper","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"skill-change"}}
 ---
 
 
@@ -75,7 +76,7 @@ Waiver rule:
 
 - Resolve owner approval, current contracts and impact before adopting durable
   skill behavior, validator, packaging or ownership changes. These are agent
-  review steps, not installed named gate profiles.
+  review steps, not automatic validator enforcement.
 - Deterministic validation failures block approval unless the failed check is
   explicitly out of scope and recorded as a visible gap.
 - Package or contract contradictions block approval until the target skill or
@@ -84,7 +85,7 @@ Waiver rule:
 ## Evidence
 
 Keep inspected source areas and material limitations in chat or the existing
-working record. No evidence observer is installed. Never invent machine access
+working record. Follow `governance/quality/evidence/access-records.md` and report coverage gaps. Never invent machine access
 receipts. Decisions explain rationale and lineage; current operational contracts
 own the rules being reviewed.
 
@@ -244,3 +245,12 @@ When applying fixes:
   of repo convention when written contract docs exist
 - do not treat a symptom patch as the full solution unless the review makes the
   temporary scope and remaining follow-up explicit
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `skill-change`.
+Use `governance/quality/evidence/source-lanes.md`: Skill Change / Package Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

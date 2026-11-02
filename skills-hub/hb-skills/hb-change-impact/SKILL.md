@@ -7,6 +7,7 @@ description: |
   or when a proposal may change durable Brain behavior such as a skill,
   workflow, validator, artifact shape, path, source of truth, ownership, or
   governance rule.
+metadata: {"brain":{"ownership_class":"companion","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"change-impact"}}
 ---
 
 
@@ -329,3 +330,12 @@ the `## Change Impact` section.
   migration, rollout, rollback, and remaining-consumer consequences.
 - Do not create, comment on, or otherwise mutate a PR without the user's
   explicit approval for that exact action.
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `change-impact`.
+Use `governance/quality/evidence/source-lanes.md`: Decision / Preflight / Repo Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

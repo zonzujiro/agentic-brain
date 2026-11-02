@@ -110,3 +110,35 @@ contract under semantic review. Reviewers remain responsible for confirming that
 symbol and line range actually support the claim. Validators must not infer that
 footnotes are required from a document path, source links, or
 evidence-access telemetry.
+
+## Implementation Evidence Rule
+
+Implementation Evidence is not one generic lane.
+
+Use Implementation Evidence code/tests/package docs for Technical RFC work and for explicit
+implementation, ownership, API, state, runtime, coverage, or event-trigger
+claims.
+
+Do not use an implementation repository’s product-knowledge projection as a default second check for
+product context when `production-features/` already contains the Brain-side
+product knowledge projection. That usually duplicates source material already
+consumed into Brain and wastes context.
+
+Reopen Implementation Evidence product knowledge only when:
+
+- the user explicitly asks for it
+- an approved deeper source-recovery pass needs it because the Brain-side
+  `production-features/` entry is insufficient
+
+If product knowledge is thin, first report the gap from `production-features/`.
+Follow relevant deeper sources within the authorized task; ask only when access
+or scope is missing. Do not reopen every historical link by default.
+
+## Data-driven availability claims
+
+A missing source filename or familiar symbol does not prove a feature is absent.
+When capability is driven by a catalog or configuration, inspect that source,
+publish/support state, hierarchy, conditions and experiments as relevant.
+Catalog presence establishes only the capability it represents. Editing,
+configuration, rendering, ownership and runtime claims need their own evidence.
+Preserve conflicts between catalog and implementation evidence explicitly.

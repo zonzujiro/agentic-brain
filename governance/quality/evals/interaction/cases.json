@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "ambiguous-owner-one-question",
+      "fixture": "governance/quality/fixtures/interaction/ambiguous-owner-one-question.md"
+    },
+    {
+      "id": "blocked-source-keeps-conclusion-provisional",
+      "fixture": "governance/quality/fixtures/interaction/blocked-source-keeps-conclusion-provisional.md"
+    },
+    {
+      "id": "durable-rule-stops-for-decision",
+      "fixture": "governance/quality/fixtures/interaction/durable-rule-stops-for-decision.md"
+    },
+    {
+      "id": "false-reviewed-source-claim-is-repaired",
+      "fixture": "governance/quality/fixtures/interaction/false-reviewed-source-claim-is-repaired.md"
+    },
+    {
+      "id": "grounded-recommendation-closes-alternative",
+      "fixture": "governance/quality/fixtures/interaction/grounded-recommendation-closes-alternative.md"
+    },
+    {
+      "id": "linked-design-source-stays-unread",
+      "fixture": "governance/quality/fixtures/interaction/linked-design-source-stays-unread.md"
+    },
+    {
+      "id": "lossy-rewrite-asks-first",
+      "fixture": "governance/quality/fixtures/interaction/lossy-rewrite-asks-first.md"
+    },
+    {
+      "id": "passive-authoring-option-set",
+      "fixture": "governance/quality/fixtures/interaction/passive-authoring-option-set.md"
+    },
+    {
+      "id": "read-design-does-not-decide-architecture",
+      "fixture": "governance/quality/fixtures/interaction/read-design-does-not-decide-architecture.md"
+    },
+    {
+      "id": "reader-clarity-review-prevents-restatement",
+      "fixture": "governance/quality/fixtures/interaction/reader-clarity-review-prevents-restatement.md"
+    },
+    {
+      "id": "resolved-question-routes-by-authority",
+      "fixture": "governance/quality/fixtures/interaction/resolved-question-routes-by-authority.md"
+    },
+    {
+      "id": "solution-frame-challenges-build-request",
+      "fixture": "governance/quality/fixtures/interaction/solution-frame-challenges-build-request.md"
+    },
+    {
+      "id": "solution-frame-fast-path",
+      "fixture": "governance/quality/fixtures/interaction/solution-frame-fast-path.md"
+    }
+  ]
+}

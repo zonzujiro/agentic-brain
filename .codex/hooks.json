@@ -31,6 +31,16 @@
             "timeout": 120
           }
         ]
+      },
+      {
+        "matcher": "^apply_patch$|^Write$|^Edit$|^Bash$|^exec_command$|^functions\\.exec$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/scripts/agent-policy/brain-checkout-freshness.mjs\"",
+            "timeout": 45
+          }
+        ]
       }
     ],
     "PostToolUse": [
@@ -40,6 +50,16 @@
           {
             "type": "command",
             "command": "node \"$(git rev-parse --show-toplevel)/scripts/hooks/local-lifecycle.mjs\"",
+            "timeout": 30
+          }
+        ]
+      },
+      {
+        "matcher": "^Read$|^WebFetch$|^mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/scripts/hooks/evidence-observer.mjs\"",
             "timeout": 30
           }
         ]

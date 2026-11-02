@@ -1,7 +1,7 @@
-# Reusable workflows
+# 🧰 Skills Hub
 
-Canonical source lives under `hb-skills/{skill}/`. Repository-local Codex links
-under `.agents/skills/` point to those sources without duplicating instructions.
+Canonical source lives under `hb-skills/{skill}/`. Repository-local Codex and Claude links
+under `.agents/skills/` and `.claude/skills/` point to those sources without duplicating instructions.
 Resolve repository paths from this checkout; bundled reference paths are relative
 to their skill. Copying a skill alone omits its governance dependencies.
 
@@ -59,3 +59,43 @@ not semantic approval or distribution rights.
 Local lifecycle and delivery hooks now have shared rule implementations and
 repository configuration. Their live host activation still requires user trust
 and actual event trials; see [the host contract](../governance/operations/agent-hooks.md).
+
+## ✨ Bringing a skill
+
+Start with a source package and its intended responsibility. Use `hb-adopt-skill`
+to review the package, dependencies, output ownership and conflicts before copying
+it. Review its preview and explicit transformations; preserve compatible metadata
+and substantive instructions. Do not silently shorten its workflow or rename
+upstream-owned content. PR creation remains a separate explicit approval.
+
+## 📏 Package convention
+
+Each package has its own directory and a `SKILL.md` entrypoint. Optional
+`scripts/`, `references/` and `assets/` remain beside the package. Instructions
+should name the actual triggers, inputs, outputs, evidence, ownership, halt
+conditions and validation. A helper script owns deterministic transformations;
+the agent owns semantic judgment. A reference is read when its task needs it.
+
+Keep host discovery separate from canonical authorship. An installed link does
+not establish that all hosts loaded the package or that its runtime dependencies
+are available. A renamed package must update its consumers and discovery links.
+Do not overwrite existing package content during adoption.
+
+## 🛠️ Review and extension
+
+Use `hb-review-skill` for trigger fit, role boundaries, evidence, output ownership,
+missing dependencies and collisions with other producers. Run change-impact
+review for durable behavior changes and preserve a concrete outcome for every
+affected consumer. Structural checks do not establish workflow quality.
+
+The [ownership metadata reference](../governance/skills/skill-metadata.md)
+preserves the original metadata model. Its validator migration is pending;
+current packages must follow the actually supported parser and writer map.
+The removed CK/BA/QA collections are excluded source packages, not a reason to
+remove reusable adoption, review or evidence requirements.
+
+## 🛟 Learning the workflow
+
+Use [sandbox onboarding](../governance/onboarding/README.md) to practice. It must
+let the user edit concrete examples, validate and repair them, and leave canonical
+project data untouched. A static tour does not count as completing the exercise.

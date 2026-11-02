@@ -51,3 +51,12 @@ test('configured hook path with missing executable is reported as broken',t=>{
  fs.rmSync(path.join(root,'scripts/githooks/pre-push'));
  assert.throws(()=>installGitHooks(root),/Missing hook: pre-push/);
 });
+
+test('hooks clear repository-local Git environment before running checks',t=>{
+ const {root}=fixture(t);
+ fs.writeFileSync(path.join(root,'package.json'),JSON.stringify({scripts:{test:'node -e "if(process.env.GIT_INDEX_FILE || process.env.GIT_PREFIX || process.env.GIT_DIR) process.exit(1)"',check:'node -e "process.exit(0)"'}}));
+ for(const hook of ['pre-commit','pre-push']) {
+   const result=spawnSync('sh',[path.join(root,'scripts/githooks',hook)],{cwd:root,encoding:'utf8',env:{...process.env,GIT_INDEX_FILE:path.join(root,'.git/index'),GIT_PREFIX:'',GIT_DIR:path.join(root,'.git')}});
+   assert.equal(result.status,0,result.stderr);
+ }
+});

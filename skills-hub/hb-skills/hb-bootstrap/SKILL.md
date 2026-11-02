@@ -1,6 +1,7 @@
 ---
 name: hb-bootstrap
 description: Set up or check a local Agentic Brain checkout. Use on a fresh clone or when asked to bootstrap the environment; verifies local prerequisites and offers optional repository Git checks without configuring connectors or credentials.
+metadata: {"brain":{"ownership_class":"companion","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"]}}
 ---
 
 # Bootstrap
@@ -45,7 +46,7 @@ to overwrite them. Configuration changes apply to linked worktrees as Git define
 so explain that scope before installation. The installer prints the previous
 setting and exact removal command when it installs.
 
-The hooks run repository tests and checks at commit and push. A failed hook blocks
+The post-checkout hook propagates the saved role. The other hooks run repository tests and checks at commit and push. A failed hook blocks
 that Git operation; fix the failure rather than disabling a hook to deliver.
 They check the current working tree, not an isolated staged or pushed snapshot;
 hosted CI checks the committed revision separately. They do not observe external reads or writes, and do not enforce PR approval or
@@ -57,14 +58,23 @@ Read `governance/operations/agent-hooks.md` and inspect
 `node scripts/install-agent-hooks.mjs`. Repository configuration is provided;
 other checkouts can use the non-overwriting installer within setup authorization.
 A written configuration is not trusted or active. The user must review the exact
-hook definitions through Codex `/hooks`; do not change trust or use bypass flags
+hook definitions through the selected host’s `/hooks`; do not change trust or use bypass flags
 on their behalf. Exercise actual events in a disposable checkout after trust.
 Report skipped/unverified events separately from passing fixture tests.
 
-## 7. Establish the next useful action
+## 7. Resolve interaction preference
+
+Read `governance/operations/roles/agent-role-guidance.md`. Apply an existing
+Creator/Builder selector or the user's stated preference. If neither is available,
+explain the modes when useful; continue in temporary Creator mode if setup is
+postponed. Save `AGENTS.local.md` only when the user wants the preference saved.
+Role choice changes explanation depth, never permissions. The installed Git post-checkout hook copies the preference into linked
+worktrees without replacing their existing selectors; verify the actual target.
+
+## 8. Establish the next useful action
 
 Ask only for missing intent: orient to existing work, start one small project,
-record a choice, or inspect evidence. No role selection, notification channel or
+record a choice, or inspect evidence. No persistent role setup, notification channel or
 external login is required. Connector investigation remains deferred until an
 actual host and connector are selected and connected.
 

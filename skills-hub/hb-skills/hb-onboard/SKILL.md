@@ -1,6 +1,7 @@
 ---
 name: hb-onboard
 description: Guide hands-on Agentic Brain practice with a fictional small project in a temporary sandbox. Use when someone wants to learn by editing evidence-backed context without touching real project documents.
+metadata: {"brain":{"ownership_class":"companion","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"]}}
 ---
 
 # Onboard
@@ -103,8 +104,10 @@ rerun the same check. If the first pass is sound, do not invent extra work.
 Show the sandbox path, final target, changed lesson, checks that ran and remaining
 gaps. Explain how to use the actual shared-knowledge writer on a real project.
 Do not copy the fictional reference into canonical knowledge without a new,
-explicitly scoped request. The complete T3 lifecycle example and explanation
-rubric remain separate work; this is one concrete training exercise.
+explicitly scoped request. For the complete project-to-knowledge practice, continue with
+[the worked lifecycle](references/lifecycle/README.md) in a fresh temporary sandbox.
+It adds a brief, decision, consequence review, delivery evidence, feature knowledge
+and reusable lesson. Preserve its fictional attribution and apply its review rubric.
 
 ## Guardrails
 

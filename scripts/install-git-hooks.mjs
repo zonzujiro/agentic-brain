@@ -18,7 +18,7 @@ export function installGitHooks(root, {install = false, env = process.env} = {})
   const hooksDir = path.resolve(root, dirResult.stdout.trim());
   const custom = fs.existsSync(hooksDir) ? fs.readdirSync(hooksDir).filter(name => !name.endsWith('.sample')) : [];
   if (previous === null && custom.length) return {status: 'preserved', custom, changed: false};
-  for (const name of ['pre-commit', 'pre-push']) {
+  for (const name of ['pre-commit', 'pre-push', 'post-checkout']) {
     const file = path.join(root, 'scripts/githooks', name);
     if (!fs.existsSync(file) || !fs.statSync(file).isFile()) throw new Error(`Missing hook: ${name}`);
     fs.accessSync(file, fs.constants.X_OK);

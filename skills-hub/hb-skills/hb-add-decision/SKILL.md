@@ -3,6 +3,7 @@ name: hb-add-decision
 description: |
   Repo-local Agentic Brain helper for shaping, writing, and meaningfully
   updating one project Decision document.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"governed-change","artifacts":[{"id":"decision","role":"final-writer","paths":["projects-in-progress/{project}/decisions/{slug}.md"]}]}}
 ---
 
 
@@ -132,3 +133,12 @@ does not replace it.
 - Do not create a PR or post a PR comment unless the user explicitly approves
   that external write.
 
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `governed-change`.
+Use `governance/quality/evidence/source-lanes.md`: Decision / Preflight / Repo Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

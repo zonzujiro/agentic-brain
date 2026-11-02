@@ -315,6 +315,17 @@ Describe relevant device, accessibility, offline, compatibility, integration and
 migration constraints. Include only contexts that materially apply; distinguish
 verified behavior from intended support and explicit unknowns.
 
+| Area | Considerations and behavior |
+|---|---|
+| Mobile / devices | Are capabilities adapted, limited or unavailable in particular views or input modes? |
+| AI assistance | Can an assistant explain, trigger or automate the feature? What still requires a person? |
+| Generated / new content | Does the feature participate in generation or initialization? Which default state is supported? |
+| Templates and content | Are presets, catalog entries, templates or content changes needed? |
+| Brand / themes | Which colors, fonts, themes or tokens apply, and what happens when they change? |
+| Existing users / backward compatibility | Is migration required? What remains compatible and what does not? |
+| Other relevant context | Add accessibility, offline, integration or other contexts only when materially relevant. |
+
+
 ---
 
 ## 11. Experiments and Changes

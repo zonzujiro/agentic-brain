@@ -12,6 +12,16 @@ export function validateSurfaces(root) {
     const file = path.join(active, entry.name, 'README.md');
     try {
       if (!fs.lstatSync(file).isFile() || !fs.readFileSync(file, 'utf8').trim()) errors.push(`${file}: project README must be a non-empty regular file`);
+      const text = fs.readFileSync(file, 'utf8').replace(/^(`{3,}|~{3,})[^\n]*\n[\s\S]*?^\1[^\n]*$/gm, '');
+      const sections = new Map();
+      let heading;
+      for (const line of text.split('\n')) {
+        if (/^## /.test(line)) { heading=line.slice(3).trim().toLowerCase(); sections.set(heading, ''); }
+        else if (heading) sections.set(heading, sections.get(heading) + line + '\n');
+      }
+      for (const section of ['Scope and responsibilities', 'Boundaries and dependencies']) {
+        if (!sections.get(section.toLowerCase())?.replace(/^#+.*$/gm, '').trim()) errors.push(`${file}: missing or empty ${section}`);
+      }
     } catch (error) { errors.push(`${file}: project README unavailable (${error.code})`); }
   }
   return errors;

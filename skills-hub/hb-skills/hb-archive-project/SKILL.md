@@ -7,6 +7,7 @@ description: |
   or update to `hb-create-feature-doc`. Use when the user says "archive
   project", "move project to production features", "archive
   projects-in-progress", or explicitly invokes `hb-archive-project`.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"standard-authoring","artifacts":[{"id":"project-archive","role":"final-writer","paths":["production-features/{feature}/"]}]}}
 ---
 
 
@@ -151,7 +152,7 @@ Expected resolution for an addition to an existing production feature:
 ## Evidence
 
 Record inspected source areas, the pre-move inventory and material gaps in
-chat or the existing working record. No machine access observer is installed.
+chat or the existing working record. Follow `governance/quality/evidence/access-records.md` and report coverage gaps.
 An inventory proves preserved files, not the truth of their historical contents.
 
 ## Flow
@@ -425,3 +426,12 @@ archiving. No inherited PR template or publication system is required.
   rules, artifact shape, or source-of-truth boundaries, run `/hb-change-impact`
   before implementation
 
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `standard-authoring`.
+Use `governance/quality/evidence/source-lanes.md`: Production Feature Knowledge.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

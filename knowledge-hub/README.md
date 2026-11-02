@@ -1,15 +1,47 @@
-# Shared knowledge
+# Knowledge Hub
 
-Store reusable knowledge with source support, applicability, and freshness limitations. No internal product knowledge is copied here. A lesson from a project is not automatically a universal rule.
+Shared Harmony reference context for humans and agents.
 
-Use [shared-knowledge authoring](../skills-hub/hb-skills/hb-add-knowledge-hub-doc/SKILL.md)
-for one reference. A flat `<topic>.md` is sufficient; create a durable subtree
-only after resolving its ownership and impact. Existing subtree conventions take
-precedence over inventing a universal metadata schema. Keep active project state,
-operating rules and delivered-feature snapshots with their respective owners.
+## Purpose
 
-For a product overview, use the specialized
-[product-context writer](../skills-hub/hb-skills/hb-create-product-context/SKILL.md)
-and its `<scope>-overview.md` target. The general reference writer routes that
-request to this specialized writer rather than maintaining a second overview.
-No product/UX/BA folder taxonomy is required.
+Use `knowledge-hub/` for durable cross-feature reference material that remains
+useful beyond one active project workspace.
+
+This is the general project reference layer. It complements:
+
+- `projects-in-progress/` for in-flight project work
+- `production-features/` for shipped feature snapshots
+- scoped decision trees under `projects-in-progress/` for project decisions and
+  Agentic Brain governance
+- `skills-hub/` for reusable agent skills
+
+It does not own shipped feature catalog content.
+
+## Optional First-Level Families
+
+- `product/` - reusable product context
+- `ux/` - reusable UX context
+- `ba/` - reusable BA context
+
+These are optional organizational examples, not required directories. Small
+Brains may keep references directly in the hub. Each family can grow
+gradually and get a narrower contract later if needed.
+
+## Authoring Rules
+
+- Keep `knowledge-hub/` for durable shared shared reference context.
+- Put repo workflow and Brain operating-model instructions under the matching
+  responsibility in `governance/`, not here.
+- Keep active project work under `projects-in-progress/`.
+- Keep shipped or live feature snapshots under `production-features/`.
+- Preserve local subtree conventions instead of forcing one global schema
+  across `product/`, `ux/`, and `ba/`.
+- When a doc makes factual claims where ownership, source, or freshness
+  matters, ground those claims explicitly or surface the gap instead of filling
+  it with guesses.
+
+## Reading Rules
+
+- Read selectively.
+- Prefer the directly relevant subtree and entry file.
+- Do not bulk-read the whole hub by default.

@@ -46,7 +46,7 @@ test('the actual two-file onboarding sandbox uses document checks without root-l
 test('minimal project contract needs a README without imposing company metadata', () => fixture(root => {
   fs.mkdirSync(path.join(root,'projects-in-progress/example'),{recursive:true});
   assert.match(validateRepository(root).join('\n'),/README unavailable/);
-  fs.writeFileSync(path.join(root,'projects-in-progress/example/README.md'),'# Example\nOwns a reading list; unresolved scope is explicit.\n');
+  fs.writeFileSync(path.join(root,'projects-in-progress/example/README.md'),'# Example\n\n## Scope and responsibilities\nOwns a reading list.\n\n## Boundaries and dependencies\nDoes not own reading sources.\n');
   assert.deepEqual(validateRepository(root),[]);
   fs.writeFileSync(path.join(root,'projects-in-progress/project-relations.json'),'null');
   assert.match(validateRepository(root).join('\n'),/expected an object/);

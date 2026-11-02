@@ -168,16 +168,164 @@ it is selected, rejected with an evidence-grounded reason, made irrelevant by a
 recorded scope change, or left explicitly open. A later recommendation must not
 silently drop it.
 
-## Nested source URLs
-
-Follow a nested source when the available extract cannot support a material
-claim, resolve a contradiction, or establish needed freshness. Finding a URL is
-not reading it. Avoid reopening every source when sufficient supported context
-already exists; state when you reused extracted context rather than reverified it.
-
 ## Current observation limits
 
-This extraction has no installed evidence observer or connector adapter. Source
-access is reported through human-readable records and reviewed semantically.
-Do not invent machine receipts. The connector investigation must establish real
-host visibility before automated access checks can be claimed.
+Automatic access records are mandatory. The self-logging reader and shared
+PostToolUse observer append transport metadata to ignored `.brain/session/`.
+Recording failures are visible; never fabricate a receipt to repair them. The
+[access-record contract](evidence/access-records.md) owns supported mappings,
+coverage, failure handling and host limits. A record does not prove truth or
+comprehension. Unmapped connector events remain visible access gaps, not successful
+source reads. Host configuration is present; actual event activation needs host
+trust and separate verification.
+
+## Baseline Governing Sources
+
+For gated workflows, governing documents are required baseline evidence. Do
+not skip them because the task looks discipline-specific.
+
+Which governing sources must actually be inspected for a given task is owned
+by the canonical, risk-tiered boot sequence in the root `AGENTS.md` (Required
+Agent Boot Sequence). This section does not define a flat minimum reading
+list; it defines the governing-source lane that sequence draws from: the
+nearest applicable `AGENTS.md`, [repo-workflows.md](../operations/repo-workflows.md),
+this evidence policy doc, [quality-gates.md](./quality-gates.md), and the
+README, standard, or contract for the target surface.
+
+Examples:
+
+| Target or task | Governing source to inspect |
+|---|---|
+| Any repo work in Agentic Brain | root `AGENTS.md` and `governance/operations/repo-workflows.md` |
+| Decision, preflight, or repo-governance work | `ARCHITECTURE.md`, accepted extraction scope, relevant Decisions and current operational owners |
+| Document authoring or review | the owning writer/template and the target surface README |
+| Skill behavior, validation, packaging, or workflow change | `skills-hub/README.md`, relevant bucket `AGENTS.md`, and affected skill docs |
+| Knowledge Hub authoring | `knowledge-hub/README.md` and the target subtree README |
+| Production feature knowledge | `production-features/README.md` |
+
+If a governing source is missing or blocked, the workflow must record the gap.
+Do not continue as if the governing rule is unknown but irrelevant.
+
+## Source Depth Rule
+
+A source is not `inspected` just because an agent found its URL or path.
+
+To mark a source as `inspected`, the workflow must read enough of the source to
+extract relevant facts, constraints, gaps, or contradictions for the task.
+
+A source recorded in a committed artifact must also be a durable, verifiable
+locator: a URL reachable by teammates or a repo-relative path. A machine-local
+path (a laptop filesystem path, `file://`, a loopback/private-network URL, or
+an expiring presigned URL) is working material, not a citable source - cite
+its canonical origin, and when none exists the dependent claim is
+`user-confirmed` or a visible gap. This portability rule requires agent
+review; the current checker does not enforce every non-portable URL form.
+
+Use these source-depth labels in evidence inventories:
+
+| Depth | Meaning | Allowed use |
+|---|---|---|
+| `link-found` | The source was discovered but not opened/read. | Discovery only; cannot support claims. |
+| `read` | The source was opened and relevant sections were reviewed. | Can support narrow claims from the reviewed content. |
+| `extracted` | Relevant facts were pulled into notes, a source package, or the output. | Can support claims listed in the extraction. |
+| `cross-checked` | A material claim was compared against another relevant source lane. | Strongest support for high-impact claims. |
+| `needs-deeper-source` | The Brain-side source is insufficient, but an upstream URL may contain the missing answer. | Cannot support claims yet; inspect within authorized scope; ask only when access or scope is missing. |
+| `blocked` | The source could not be accessed. | Cannot support claims; must stop for required/material lanes unless the user explicitly waives the lane and the affected content stays a visible gap. |
+| `not needed` | The source was considered but not needed for this task or claim type. | Must include a reason. |
+
+If an evidence inventory only lists URLs, the source-depth gate fails.
+If a required or triggered material lane is `blocked`, the workflow is not
+ready for a source-grounded conclusion or canonical output. Exploration may
+continue when the blocked lane and affected conclusions remain visibly
+provisional. The next action before grounding or finalization is to ask the
+user to solve access, narrow the claim, or explicitly waive the lane. A waiver
+can allow a partial output with visible gaps; it cannot turn unread source
+content into evidence.
+
+## Nested Source URLs
+
+Many Brain docs, especially `production-features/`, preserve links to Jira,
+Drive, Figma, Slack, or other upstream sources.
+
+Agents should not automatically reopen every upstream URL. That would recreate
+the unbounded crawl problem.
+
+Use this rule instead:
+
+1. If the Brain-side document already contains the needed extracted facts, rely
+   on that document and preserve its source link near the supported claim.
+2. If the Brain-side document is thin, contradictory, or missing a material
+   answer that the upstream URL is likely to contain, mark the source as
+   `needs-deeper-source` and inspect the relevant upstream content within the
+   authorized task. Ask only when additional access or scope is required.
+3. If the user explicitly provides a URL as a source for the current task, the
+   workflow should inspect its content when access is available. Do not treat the
+   link itself as evidence.
+4. If access is blocked for a material source, stop before drafting or
+   finalizing and ask the user to solve access or explicitly waive the lane.
+   If the user waives it, keep the affected claim as a gap or user-confirmed
+   assumption; do not infer the missing source content from the link title.
+
+This prevents two opposite failures: link laundering, where agents cite sources
+they never read, and source explosion, where agents burn context reopening every
+historical link.
+
+## Cross-Reference Rule
+
+Material claims should be cross-referenced when another relevant source lane is
+available and the claim affects scope, ownership, implementation, analytics,
+accessibility, shipped behavior, risk, or durable repo policy.
+
+The output should make the support level visible:
+
+| Support level | Meaning |
+|---|---|
+| `single-source` | One inspected source supports the claim. Acceptable for low-risk or source-of-truth claims. |
+| `cross-checked` | The claim was compared against another relevant source lane. Preferred for high-impact claims. |
+| `conflict` | Sources disagree. The output must name the conflict instead of hiding it. |
+| `gap` | Required support is missing. The output must preserve the gap or stop. |
+| `user-confirmed` | The user supplied the fact and no external source was available. Mark it explicitly. |
+
+Cross-referencing is not always "read one more repository." It means checking
+the claim against the right peer lane for the task.
+
+Examples:
+
+- Product and UX claims usually cross-check active project docs,
+  `knowledge-hub/`, and `production-features/`. For Agentic Brain work, this
+  includes repo-local peer reads such as relevant `knowledge-hub/` docs,
+  sibling `production-features/` docs, and the active-work surface
+  `projects-in-progress/` when the claim depends on active project context.
+- Tech-design claims about implementation, ownership, APIs, state, or runtime
+  behavior must be grounded in selected implementation code/tests/package docs.
+- BI event claims should cross-check design/user actions, event or metrics catalog
+  data when available, and implementation trigger points when runtime placement
+  is claimed.
+- Governance claims should cross-check relevant Decision records, affected decision
+  bodies, affected root docs, and operating principles.
+
+## Stable Artifact Source Boundary
+
+`projects-in-progress/` is active working context. Its contents may support
+discovery, contradiction checks, and active-project decisions, but they are not
+a reliable source of truth for stable artifacts because the underlying work can
+change while it remains in progress.
+
+Governance docs, `production-features/`, Knowledge Hub references, and other
+stable artifacts must ground their durable claims in the owning stable source:
+governing docs, skills, validators, templates, or config for operational rules;
+and shipped evidence, stable external artifacts, pinned implementation sources,
+or explicit user confirmation for product facts. A `projects-in-progress/` link
+may preserve lineage, but it must not be the authority for a stable claim.
+
+Decision records under `projects-in-progress/agentic-brain/` preserve rationale
+and lineage only. As defined in `governance/operations/repo-workflows.md`, they do not govern
+future behavior; the consequential stable rule belongs in its operational owner.
+
+## Detailed Evidence Guidance
+
+Open only the page needed for the task's claims and source lanes; the entrypoint above remains the owner of the shared evidence posture.
+
+- [Grounding standards](./evidence/grounding.md) — claim-level footnotes, implementation evidence, and claim support.
+- [Evidence inventory](./evidence/inventory.md) — the human-readable record shape.
+- [Source lanes](./evidence/source-lanes.md) — discipline and workflow-specific source requirements.

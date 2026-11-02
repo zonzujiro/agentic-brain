@@ -3,6 +3,7 @@ name: hb-resolve-artifact-write
 description: |
   Resolve the Agentic Brain artifact write boundary before creating, moving, or
   materially updating repo artifacts. This skill does not write files.
+metadata: {"brain":{"ownership_class":"validator-helper","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"boundary-resolution"}}
 ---
 
 # Resolve Artifact Write
@@ -155,3 +156,12 @@ When the result is `ask user`, present the smallest concrete choice, such as:
 - Do not turn agent-repairable placement mistakes into user homework.
 - Do not create a new folder, artifact type, maturity state, or duplicate rule
   by example.
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `boundary-resolution`.
+Use `governance/quality/evidence/source-lanes.md`: Decision / Preflight / Repo Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

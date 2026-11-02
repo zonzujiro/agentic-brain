@@ -47,6 +47,23 @@ export function parseSkillMetadata(text) {
   return fields;
 }
 
+// JSON flow metadata is a supported YAML subset; vendor metadata stays untouched.
+export function validateOwnership(fields) {
+  const raw = fields.get('metadata');
+  if (!raw?.trim().startsWith('{')) return [];
+  let metadata; try { metadata=JSON.parse(raw); } catch { return ['invalid JSON-flow metadata']; }
+  const brain=metadata.brain;if (!brain) return [];
+  const errors=[];
+  if (!['canonical-writer','companion','validator-helper','legacy'].includes(brain.ownership_class)) errors.push('unknown ownership_class');
+  if (!['direct','internal','helper'].includes(brain.user_invocation)) errors.push('unknown user_invocation');
+  if (!Array.isArray(brain.governed_by) || !brain.governed_by.includes('governance/artifacts/artifact-writer-map.md')) errors.push('ownership must reference writer map');
+  if (brain.ownership_class==='canonical-writer' && (!Array.isArray(brain.artifacts) || !brain.artifacts.some(a=>a.id && a.role==='final-writer' && Array.isArray(a.paths) && a.paths.length))) errors.push('canonical writer needs a final-writer artifact and paths');
+  if (brain.user_invocation==='internal' && (fields.get('disable-model-invocation')!=='true' || fields.get('user-invocable')!=='false')) errors.push('internal helper visibility flags disagree');
+  if (brain.ownership_class==='legacy' && brain.user_invocation==='direct') errors.push('legacy skills cannot be direct entrypoints');
+  if (brain.gate_profile && !['standard-authoring','governed-change','skill-change','boundary-resolution','change-impact'].includes(brain.gate_profile)) errors.push('unknown gate profile');
+  return errors;
+}
+
 export function validateSkillPackage(dir, expectedName = path.basename(dir)) {
   const errors = [];
   try {
@@ -63,18 +80,19 @@ export function validateSkillPackage(dir, expectedName = path.basename(dir)) {
     if (errors.length) return errors;
     const text = fs.readFileSync(path.join(dir, 'SKILL.md'), 'utf8');
     const fields = parseSkillMetadata(text);
+    errors.push(...validateOwnership(fields).map(message=>`${dir}: ${message}`));
     if (fields.get('name') !== expectedName) errors.push(`${dir}: name must match folder name`);
     if (/\/Users\/[^/\s]+\/|\/home\/[^/\s]+\/|[A-Za-z]:\\Users\\/.test(text)) errors.push(`${dir}: machine-local path in instructions`);
   } catch (error) { errors.push(`${dir}: ${error.message}`); }
   return errors;
 }
 
-export function validateSkillsHub(root) {
+export function validateSkillsHub(root, host = '.agents') {
   const errors = [];
   const hub = path.join(root, 'skills-hub/hb-skills');
-  const index = path.join(root, '.agents/skills');
+  const index = path.join(root, host, 'skills');
   if (!fs.existsSync(hub)) return errors;
-  for (const folder of [path.join(root, "skills-hub"), hub, path.join(root, ".agents"), index]) {
+  for (const folder of [path.join(root, "skills-hub"), hub, path.join(root, host), index]) {
     try { if (fs.lstatSync(folder).isSymbolicLink()) return [`${folder}: index and source parents must not be symlinks`]; } catch (error) { if (error.code !== "ENOENT") throw error; }
   }
   const names = new Set();
@@ -96,6 +114,7 @@ export function validateSkillsHub(root) {
       if (!names.has(entry)) errors.push(`${index}/${entry}: stale or unowned discovery entry`);
     }
   }
+  if (host === '.agents' && fs.existsSync(path.join(root, '.claude'))) errors.push(...validateSkillsHub(root, '.claude'));
   return errors;
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {

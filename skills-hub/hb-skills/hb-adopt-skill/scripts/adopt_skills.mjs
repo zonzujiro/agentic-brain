@@ -49,12 +49,12 @@ export function adopt({ source, root, apply = false, expectedDigest, link = fals
   safeDirectory(hub);
   const target = path.join(hub, packet.name);
   if (exists(target)) throw new Error(`target already exists: ${target}`);
-  const index = path.join(root, '.agents/skills');
-  const discovery = path.join(index, packet.name);
-  if (link) {
-    safeDirectory(index);
-    if (exists(discovery)) throw new Error(`discovery entry already exists: ${discovery}`);
+  const indexes=['.agents','.claude'].map(host=>path.join(root,host,'skills'));
+  if(link) for(const index of indexes) {
+    let existing=index;while(!exists(existing))existing=path.dirname(existing);safeDirectory(existing);
+    const discovery=path.join(index,packet.name);if(exists(discovery))throw new Error(`discovery entry already exists: ${discovery}`);
   }
+  const createdLinks=[];
   const result = { name: packet.name, target: path.relative(root, target), digest: packet.digest,
     files: packet.files.map(f => f.name), discovery: link ? 'explicit relative link requested' : 'not installed',
     status: apply ? 'imported' : 'preview' };
@@ -70,8 +70,9 @@ export function adopt({ source, root, apply = false, expectedDigest, link = fals
       fs.writeFileSync(dest, file.bytes, { flag: 'wx', mode: file.mode });
       fs.chmodSync(dest, file.mode);
     }
-    if (link) fs.symlinkSync(path.relative(index, target), discovery, 'dir');
+    if (link) for(const index of indexes) { fs.mkdirSync(index,{recursive:true});const discovery=path.join(index,packet.name);fs.symlinkSync(path.relative(index,target),discovery,'dir');createdLinks.push(discovery); }
   } catch (error) {
+    for(const file of createdLinks)fs.unlinkSync(file);
     fs.rmSync(target, { recursive: true, force: true });
     throw error;
   }

@@ -6,6 +6,7 @@ description: |
   when context may duplicate or overlap other work, claim incompatible
   responsibilities, omit a necessary boundary, or copy mutable truth under
   multiple owners.
+metadata: {"brain":{"ownership_class":"validator-helper","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"]}}
 ---
 
 

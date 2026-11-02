@@ -3,6 +3,7 @@ name: hb-resolve-decision-impact
 description: |
   Agentic Brain helper for reviewing and closing downstream affected_docs
   entries after a Decision contains a concrete choice.
+metadata: {"brain":{"ownership_class":"canonical-writer","user_invocation":"direct","governed_by":["governance/artifacts/artifact-writer-map.md","governance/skills/skill-metadata.md"],"gate_profile":"governed-change","artifacts":[{"id":"decision-impact","role":"final-writer","paths":["projects-in-progress/{project}/decisions/{slug}.md"]}]}}
 ---
 
 
@@ -77,3 +78,12 @@ Use `blocked` with a visible note instead.
 - Do not edit unreviewed affected entries.
 - Do not invent ownership or a target path.
 - Do not create or comment on a PR without the user's explicit approval.
+
+## Shared review profile
+
+Use `governance/quality/gates/gate-profiles.md`: `governed-change`.
+Use `governance/quality/evidence/source-lanes.md`: Decision / Preflight / Repo Governance.
+Apply these agent review procedures at this skill's existing write/finalization
+transitions; preserve its local halt and waiver rules. The current structural
+validator does not enforce these declarations. Report material findings in chat
+and, when authorized, relevant PR evidence. A read-only helper stays read-only.

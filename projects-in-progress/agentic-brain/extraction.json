@@ -2,7 +2,7 @@
   "source": "Harmony Brain",
   "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
   "recorded": "30.10.2026",
-  "status": "reviewed foundation and T2 core subset; full migration and publication review pending",
+  "status": "local gap implementation and deterministic review completed; live host/connector coverage and model acceptance remain explicit gaps; uncommitted and unpublished",
   "files": [
     {
       "source_path": "governance/operations/communication.md",
@@ -16,14 +16,14 @@
       "target_path": "governance/quality/evidence-policies.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "476a5671d5b47e47c0e8df8c274a01d9a9ea17dae2b35f11106efa7ad3a2b962",
-      "adaptation": "Retained general evidence model and honesty invariant; removed source-specific profiles and unimplemented runtime assumptions; added explicit observation limits"
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored governing-source lane, source-depth vocabulary, bounded nested reads, support levels and stable-artifact boundary; no receipt enforcement claim. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "governance/quality/evidence/grounding.md",
       "target_path": "governance/quality/evidence/grounding.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "f3ac47a4720ef162c3f8ee1d92fbaa6194d4490620e83fb24b4e930fd32f774c",
-      "adaptation": "Retained general grounding rules; removed company-specific examples and source-lane rules; described current validator without claiming active hooks"
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored claim-driven implementation lane and general data-driven availability lesson; excluded company catalog endpoint and private component examples. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "scripts/lib/markdown/footnotes.mjs",
@@ -37,28 +37,28 @@
       "target_path": "scripts/__tests__/source-footnote-links.test.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "d81155b85d2d3f8f25f7e2526733cefb1883ac94401a05d839b04a8903c739f1",
-      "adaptation": "Retained five independent source-link regressions; omitted hook-engine and discipline-path integration cases pending hook migration"
+      "adaptation": "Restored all original 34 source-link regression cases, including cross-surface, symlink, multiline, changed-claim and mounted-engine coverage. Adapted the retired standalone rule mount to the current shared engine; no production behavior changed. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-resolve-artifact-write/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-resolve-artifact-write/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "d25f6d5991441300904344c7db5355d07b8970db6961624e656d1dcb8d66e653",
-      "adaptation": "Preserved six-step read-only boundary resolution, existing-target handling and guardrails; removed obsolete metadata, unmigrated gate profiles and excluded authoring routes; linked current contracts and exposed unavailable automation."
+      "adaptation": "Preserved six-step read-only boundary resolution, existing-target handling and guardrails; removed obsolete metadata, unmigrated gate profiles and excluded authoring routes; linked current contracts and exposed unavailable automation. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "governance/artifacts/artifact-write-boundary.md",
       "target_path": "governance/artifacts/artifact-write-boundary.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "eb74b2bfaaf9440685ba063af91670af14222d31c965f522606dff36d57e9c48",
-      "adaptation": "Preserved pre-write resolution, maturity, existing-artifact handling and user visibility; replaced internal surface map with current extracted owners; removed excluded format exceptions, prototype products, gate claims and unmigrated decision lifecycle."
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Retained existing detailed boundary and connected restored writer map; current enforcement limits preserved. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-change-impact/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-change-impact/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "967910d05d33f0aedf5b89d40fe69744e6d78c8564c6b5616c9a6e88fa89a7d0",
-      "adaptation": "Preserved concrete-delta, producer-conflict, full-population, authority, disposition, rollout and independent final-review contracts. Removed unmigrated producer controller and push hooks; retained local scanner and disclosed manual review and baseline coverage limits."
+      "adaptation": "Preserved concrete-delta, producer-conflict, full-population, authority, disposition, rollout and independent final-review contracts. Removed unmigrated producer controller and push hooks; retained local scanner and disclosed manual review and baseline coverage limits. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-change-impact/references/review-checklist.md",
@@ -79,35 +79,35 @@
       "target_path": "skills-hub/hb-skills/hb-review-skill/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "214f88e89cfcec594752d0793b8391bab1fff785fe0c371e45024a07be75cf2d",
-      "adaptation": "Preserved semantic skill rubric, producer-conflict review, edit scope and evidence requirements; removed private principles, excluded evaluation references and nonexistent package validator; use current repository checks with explicit semantic limits."
+      "adaptation": "Preserved semantic skill rubric, producer-conflict review, edit scope and evidence requirements; removed private principles, excluded evaluation references and nonexistent package validator; use current repository checks with explicit semantic limits. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-add-knowledge-hub-doc/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-add-knowledge-hub-doc/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "cf12cd58c45148026f418dd6b9ef47259b20468d1b11bddb9073bd4f167eb8d8",
-      "adaptation": "Preserved nine-step shared-reference authoring and evidence review; removed discipline taxonomy, automatic evidence logs, inherited PR templates and gate names; use current hub contract and existing authorization, with small-project flat references."
+      "adaptation": "Preserved nine-step shared-reference authoring and evidence review; removed discipline taxonomy, automatic evidence logs, inherited PR templates and gate names; use current hub contract and existing authorization, with small-project flat references. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-add-decision/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-add-decision/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "94a4a33c8bf46f8a16aaaad36776cbb35830a64a447652152080a7ee2b833288",
-      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks."
+      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-review-decision/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-review-decision/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "d27dfcc7f7df3b69827bc5e65accc9f2c569d9b93588915dcd0a1335463e3fa0",
-      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks."
+      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-resolve-decision-impact/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-resolve-decision-impact/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "a838bb620e54897676d774b06eb9de0334f9b1acf8f2811031b6316738811172",
-      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks."
+      "adaptation": "Retained stable Decision ownership, evidence, alternatives, contradiction/lineage review and narrow impact updates; removed discipline/planning/notification routes, private principles and unmigrated gate profiles; use dot dates and extracted local checks. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-add-decision/references/workflow-contract.md",
@@ -156,21 +156,21 @@
       "target_path": "skills-hub/hb-skills/hb-create-product-context/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "8b77febc83458a23f9e129073ef57d27fec9d5fd387dcddc05e3ee6b58a79a2f",
-      "adaptation": "Retained source-first extraction, section coverage, selective follow-up, evidence and anti-fabrication contracts under neutral name; removed company transport, products, prescribed vendor lanes, automatic receipts and unmigrated gate/PR requirements. Use current surface and authorization."
+      "adaptation": "Retained source-first extraction, section coverage, selective follow-up, evidence and anti-fabrication contracts under neutral name; removed company transport, products, prescribed vendor lanes, automatic receipts and unmigrated gate/PR requirements. Use current surface and authorization. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-pm-create-feature-doc/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-create-feature-doc/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "8ad6f5f7271df83b3b55ccba88fdae07591828c3e8c84d52dc0704f6dd830191",
-      "adaptation": "Retained source-first extraction, section coverage, selective follow-up, evidence and anti-fabrication contracts under neutral name; removed company transport, products, prescribed vendor lanes, automatic receipts and unmigrated gate/PR requirements. Use current surface and authorization."
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored exact-search-first grounding plan, neighboring tests/entrypoints, auditable unsuccessful searches and stable-output boundary. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-pm-create-feature-doc/references/feature-knowledge-doc-template.md",
       "target_path": "skills-hub/hb-skills/hb-create-feature-doc/references/feature-knowledge-doc-template.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "c3bbf7a5e69deef255b6251629968edc910789c82f236baa323e971b61a25e17",
-      "adaptation": "Preserved substantive section prompts and evidence checklist; neutralized company examples, dates and platform/service requirements. Clarified authored user intents are not research quotes and optional depth for small projects."
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored platform consideration prompts as a detailed neutral table rather than a summary paragraph. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-pm-create-product-context/references/product-overview-template.md",
@@ -184,42 +184,42 @@
       "target_path": "skills-hub/hb-skills/hb-bootstrap/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "a4da8193d0961dfdb339efa5bbefc4b24c3ab7d8f1f233c0f99c309419122baa",
-      "adaptation": "Replaced excluded gateway, registry, role and notification setup with idempotent local runtime/check orientation and optional non-overwriting Git-check installer. No connector or host-discovery claim.; documented optional host hook configuration and user-owned trust step"
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Reconnected role preference setup without restoring company login or automatic worktree copying. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-start-project/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-start-project/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "f1c461ee6a9b64c27e85f62bff32073e4df59b23123a480af60417208cae7db7",
-      "adaptation": "Preserved identity, idempotent repair, semantic project capsule, solution challenge and minimal artifact flow. Removed mandatory organization/domain/notification metadata, planning and excluded handoffs; made brief depth optional and disclosed pending semantic overlap automation."
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored capsule structure and corrected obsolete claim that overlap automation is unavailable. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-adopt-skill/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-adopt-skill/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "8c6656f0360c353e90dd9e2c4059db1a34af5366791a5e3a9c6f496e954391e6",
-      "adaptation": "Retained bounded source adoption, metadata preservation, collision handling and honest manual review. Removed discipline buckets, automatic importer/index claims and excluded collection routes; use reviewed explicit copies and current validation.; reviewed digest-bound helper with explicit optional discovery installation"
+      "adaptation": "Retained bounded source adoption, metadata preservation, collision handling and honest manual review. Removed discipline buckets, automatic importer/index claims and excluded collection routes; use reviewed explicit copies and current validation.; reviewed digest-bound helper with explicit optional discovery installation Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-archive-project/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-archive-project/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "53a017050d6970c699000d581dc6bd371f0d09a95506cd9ed3669df1ae3aee03",
-      "adaptation": "Retained single-project archive modes, exact-target collision protection, inventory preservation, pointer impact and delegated knowledge handoff. Removed operational planning/QA products, role setup, notification and receipt assumptions; retain active and archived Decision lineage."
+      "adaptation": "Retained single-project archive modes, exact-target collision protection, inventory preservation, pointer impact and delegated knowledge handoff. Removed operational planning/QA products, role setup, notification and receipt assumptions; retain active and archived Decision lineage. Reconnected restored shared review profile and source-lane owner. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-semantic-project-audit/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "3cf2ca35c4171e9cde15d8ed67ed6a958fb5803802dcf47b0c55f0c3d1db58aa",
-      "adaptation": "Retained original two-stage active-agent controller workflow, bounds, evidence rules, input freshness, advisory semantics and cleanup. Removed operational planning, private metadata, uninstalled CI/producer attestations and evaluation claims; adapted remote main and explicit host limitations. Updated delivery guidance to point to the implemented bounded hook and PR attestation checks; semantic review remains agent-owned."
+      "adaptation": "Retained original two-stage active-agent controller workflow, bounds, evidence rules, input freshness, advisory semantics and cleanup. Removed operational planning, private metadata, uninstalled CI/producer attestations and evaluation claims; adapted remote main and explicit host limitations. Updated delivery guidance to point to the implemented bounded hook and PR attestation checks; semantic review remains agent-owned. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-onboard/SKILL.md",
       "target_path": "skills-hub/hb-skills/hb-onboard/SKILL.md",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "daf229b2501f5420f016925cb12d92e09df1f9a5ca05c90f4b25b2d3a58dbb8d",
-      "adaptation": "Retained sandbox isolation, real-contract validation, upstream-first teaching, grouped drafting, hands-on edits and honest completion. Replaced removed discipline/CK tracks with fictional small-project knowledge and changed-evidence exercise; no claim of complete T3 lifecycle coverage.; use explicit document-sandbox validator so repository root ownership does not invalidate the temporary lesson"
+      "adaptation": "Retained sandbox isolation, real-contract validation, upstream-first teaching, grouped drafting, hands-on edits and honest completion. Replaced removed discipline/CK tracks with fictional small-project knowledge and changed-evidence exercise; no claim of complete T3 lifecycle coverage.; use explicit document-sandbox validator so repository root ownership does not invalidate the temporary lesson Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "skills-hub/hb-skills/hb-semantic-project-audit/references/stage1-schema.json",
@@ -275,14 +275,14 @@
       "target_path": "scripts/validate_skills_hub.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "7a47aa7a72c5dc60f65508e03bad236f32a1a7dcdf7bb744663a7c43298d2c30",
-      "adaptation": "Adapted portable metadata, folder and discovery checks; shared strict block parser with adopter; removed collection metadata, evaluation catalog and host-specific requirements."
+      "adaptation": "Adapted portable metadata, folder and discovery checks; shared strict block parser with adopter; removed collection metadata, evaluation catalog and host-specific requirements. Retained package validation; added both host discovery checks and JSON-flow ownership/class/invocation/profile checks without rewriting vendor metadata."
     },
     {
       "source_path": "scripts/lib/hooks/surfaces.mjs",
       "target_path": "scripts/lib/hooks/surfaces.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "7fc5430301e4d402afea5b5d3a5ce96cd17da042be6a81b0d7fe76aaae86d761",
-      "adaptation": "Retained root ownership mechanic against current surface contracts; removed inherited products, format blacklist, discipline exceptions and source-only root files."
+      "adaptation": "Retained root ownership mechanic against current surface contracts; removed inherited products, format blacklist, discipline exceptions and source-only root files. Retained root ownership and format boundary with only current generic owners; excluded private product exceptions."
     },
     {
       "source_path": "scripts/validate_root_paths.mjs",
@@ -317,7 +317,7 @@
       "target_path": "skills-hub/hb-skills/hb-adopt-skill/scripts/adopt_skills.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "a4bb091d539e248baef99d0ed61146c26f57a6a38dc1b8905abfbee92a3ab80a",
-      "adaptation": "Adapted reviewed package inventory/copy; one explicit normalized package, preview-first digest-bound apply, no metadata stripping, rename, script execution or implicit index mutation; refuse collisions and symlinks."
+      "adaptation": "Adapted reviewed package inventory/copy; one explicit normalized package, preview-first digest-bound apply, no metadata stripping, rename, script execution or implicit index mutation; refuse collisions and symlinks. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "scripts/hooks/lib/adapter.mjs",
@@ -331,7 +331,7 @@
       "target_path": "scripts/lib/hooks/engine.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "92a9943918f6b874f2bfdd625c71d1bf38c901bc9ffa8297f2c854180542f57a",
-      "adaptation": "Adapted shared read-only rule mount used by repository validation and hooks; current root/link/footnote rules, no inherited session receipts or quality-feedback dependencies."
+      "adaptation": "Adapted shared read-only rule mount used by repository validation and hooks; current root/link/footnote rules, no inherited session receipts or quality-feedback dependencies. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "scripts/lib/hooks/rules.mjs",
@@ -348,25 +348,11 @@
       "adaptation": "Adapted read-only report CLI to current shared engine; no automatic authored-content normalization."
     },
     {
-      "source_path": "scripts/hooks/pre-write-guard.mjs",
-      "target_path": "scripts/hooks/local-lifecycle.mjs",
-      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
-      "source_sha256": "c7594885d10d1f598542988235813374bcebe148701733ad85b0220c8a3eba33",
-      "adaptation": "Adapted structured target checks to current root contract, deletion/move repair, event cwd and symlink handling; consolidated lifecycle mounts without connector observation or excluded generated artifacts."
-    },
-    {
-      "source_path": "scripts/hooks/session-boot.mjs",
-      "target_path": "scripts/hooks/local-lifecycle.mjs",
-      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
-      "source_sha256": "31c7862b6f215013fe95b14c2535f9744d34a28ce9de430ff06da1860c1cc2ce",
-      "adaptation": "Retained governing pointers; removed role-selector requirement and source session rotation; no transcripts or evidence receipts written."
-    },
-    {
       "source_path": "scripts/hooks/stop-completeness.mjs",
       "target_path": "scripts/hooks/local-lifecycle.mjs",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "833e81ef519b830b4863044834190b498e2ce26fa8a3072508bd614605e70321",
-      "adaptation": "Retained final-check/repair continuation using current repository validator and host stop flag; whole-tree read-only check with one continuation, explicit pre-existing-work boundary; excluded planning/QA generation and observation receipts."
+      "adaptation": "Retained final-check/repair continuation using current repository validator and host stop flag; whole-tree read-only check with one continuation, explicit pre-existing-work boundary; excluded planning/QA generation and observation receipts. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
     },
     {
       "source_path": "scripts/hooks/pre-agent-push-semantic-audit.mjs",
@@ -394,7 +380,615 @@
       "target_path": ".codex/hooks.json",
       "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
       "source_sha256": "780ea2ddf1bc1b93ed3a72369dc566ea88470dece7a444a3a8df0223bd82521a",
-      "adaptation": "Adapted only local lifecycle, structured-write and bounded delivery events; no external evidence observer, checkout policy or excluded generator mounts; requires user hook trust."
+      "adaptation": "Adapted only local lifecycle, structured-write and bounded delivery events; no external evidence observer, checkout policy or excluded generator mounts; requires user hook trust. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/roles/agent-role-guidance.md",
+      "target_path": "governance/operations/roles/agent-role-guidance.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "e2921259193bfa947d73f73da07770206a0deaacbb75b331423e40b0d54b4d3c",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved two interaction roles and optional local preference; no worktree-copy automation or repeated setup when the user already stated a preference. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/working-with-users.md",
+      "target_path": "governance/operations/working-with-users.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "871a738945b8741b7af8ac82c78ae47ea8ad6e106c9925a43cd550efff8c3c38",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Retained WIP gates, checkpoints, user fact intake, open-question closure and authority boundaries; removed unavailable telemetry/notification and historical Decision pointers. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/solution-and-impact.md",
+      "target_path": "governance/operations/solution-and-impact.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fd483216cf832a070c97e3814ddc99b9fb7f3450ed8136ec4ef08cde4d4e46f1",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Retained solution alternatives, resume behavior, full-population impact review and semantic review; points to current delivery implementation instead of inherited host/telemetry claims. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/flows/governance-and-skills.md",
+      "target_path": "governance/operations/flows/governance-and-skills.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "bba4b6c8d9780e57c238a5812e056251bfa51b6d9ce0ec51e697cf94cedb3757",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/flows/feature-context.md",
+      "target_path": "governance/operations/flows/feature-context.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "3cdbf422e1741216c65e3de552d5be9c641d0de97a49885839a3c4f60efe6790",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Retained project-to-shipped-to-shared flows; removed CK and dedicated delivery-plan dependency. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/flows/brain-checkout-freshness.md",
+      "target_path": "governance/operations/flows/brain-checkout-freshness.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "7cd580a0e818bef59084e7f908313a8354df74ec16f63ec87863deed1cdd4feb",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored manual freshness and original rollout/safety requirements; network hook explicitly pending. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/flows/pr-operations.md",
+      "target_path": "governance/operations/flows/pr-operations.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "4afb15239edb9dd9cded9f1cfe2b17816f0772a40021bf6dd2fe6949e633cd34",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved portable PR preparation, review-request intent, failure handling and follow-through boundaries; excluded company sync/notification automation, no auto-merge assumption. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/repo-workflows.md",
+      "target_path": "governance/operations/repo-workflows.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c65e20e2e80f3cc829db6c15a9521ce5ce7ee9bd563dbb229f6df33225a4a719",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored rule ownership, instruction-file boundaries, Decisions versus governing rules, shape/surface routing, flows and dates; excluded dedicated products and unavailable artifact families. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/quality-gates.md",
+      "target_path": "governance/quality/quality-gates.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c8bd9605903b1619a6af50c7018469ec76db65fd202098adc4738052a7bd7bc4",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored detailed review with explicit WIP-versus-promotion scope. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/evidence/inventory.md",
+      "target_path": "governance/quality/evidence/inventory.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "e314acbede5e37d0d2348af311cde763699a7f280e2702664c01aaba4542c869",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored full per-source record and per-target batch requirements; removed source-only observer transport claims. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/gates/evidence-and-freshness.md",
+      "target_path": "governance/quality/gates/evidence-and-freshness.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "91ff15f59474a4d4a83669c1c1068f7f9f8078ab1f48fc7b9968ae31675ded83",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored full statement review, source readiness, grounding, cross-reference and freshness procedures; removed BCA and receipt dependencies. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/gates/routing-and-readiness.md",
+      "target_path": "governance/quality/gates/routing-and-readiness.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "14e2e2b020c74f31e3865e2954d5888a4cac40810dc8630834cf207d222bbe23",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/gates/decision-preflight.md",
+      "target_path": "governance/quality/gates/decision-preflight.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "e5db1caf1bb1e632040258397933a844d92ae70f054a8e8b06a5f1518b482fec",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Removed private principles dependency; retained durable-rule preflight, decision review and operational follow-through. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/gates/gate-profiles.md",
+      "target_path": "governance/quality/gates/gate-profiles.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "b7be30dfae2405247278b54dd52d6e6ea52637ab203215bf0b1d7fd430ef73b5",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored profiles and a complete example; fixed the source document\u2019s split code fence and disclosed manual validation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "production-features/README.md",
+      "target_path": "production-features/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "2f264eea8593d28ee45217fc99a2c757a4a1bc3bd5ab54fe9ee1189a43440e99",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored full archive shapes, stable evidence boundary, semantic primary document and lossless domain consolidation; removed private bootstrap and notification routes. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "knowledge-hub/README.md",
+      "target_path": "knowledge-hub/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "57f533dcce17b2e6813c90e261188e46542e5ccfa841eed21c0e7c41049f1714",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored author/read boundaries and optional taxonomy; no mandatory organization-sized layout. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "projects-in-progress/README.md",
+      "target_path": "projects-in-progress/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "5db6e51f05d4eea3fcad8fd01c6e2ce218e54ae27c8c97ce0609201b40569aff",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored capsule update triggers, experiments and authoring rules without private notification/roster schema. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "ARCHITECTURE.md",
+      "target_path": "ARCHITECTURE.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d96d913de4de071898e41eb65943268b39da38b16c0a6c339f05dee3d8bfbcce",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored storage/read-write model, quality layers, hook posture, canonical owners and skill runtime in detail. Kept current implementation status and explicit excluded-product boundaries. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/evidence/source-lanes.md",
+      "target_path": "governance/quality/evidence/source-lanes.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "6c0617424b57ef915408d22da70f9401a336fe1e91b934fab673854ae90e1538",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored claim-driven source matrices including optional design/test/measurement evidence; removed dedicated planning, CK, private regression pool and private principles. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/documentation-standards.md",
+      "target_path": "governance/artifacts/documentation-standards.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "9d453cb459103653691dfe4773a106699ca458e8057278a202f313de998eb55f",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved shared and specialized reference contracts with explicit writer/validator limits. Clarified direct use and extension of the reusable baseline independently of specialized automation; added consumer-driven extension and migration guidance. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/artifact-writer-map.md",
+      "target_path": "governance/artifacts/artifact-writer-map.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "1ab7a010f1daceeba84751301413bdfd6ba5a435d90e30edba481bb9b8ae4d03",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored artifact ownership, direct-edit and fact-intake routing against installed writers; removed unavailable writer claims and excluded product rows. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/reference-architecture/README.md",
+      "target_path": "governance/reference-architecture/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "09ac692bff53af2ea008c4c41715dcd97db6991583d5d9413879b0a62a497b7a",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/operations/README.md",
+      "target_path": "governance/operations/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "2b054607f5e6b9149a67d26071558c986b34c2a447ee3ff459d5d6d8dd1b9985",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "AGENTS.md",
+      "target_path": "AGENTS.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "e5f90194f023f0b2d41d7b54f1d9d6df9428454ebdccb106322aafb0bfa768f7",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved extraction-specific constraints and restored risk-based boot, role routing, user interaction, solution/impact and delivery pointers. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/README.md",
+      "target_path": "governance/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "1eb24ffc43b276450132dd4e1884983be89421b529ef650bae3b8437e13679a4",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/documentation-standards/handoff.md",
+      "target_path": "governance/artifacts/documentation-standards/handoff.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fa332263f791e25c9adeabb95547932e718926e9a3ec621f3d2f218d482778c3",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved detailed consumer/section/checklist guidance as retained reference; specialized writer/schema remains pending, private implementation examples removed. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/documentation-standards/technical-rfc.md",
+      "target_path": "governance/artifacts/documentation-standards/technical-rfc.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "386052f16c6897216feb50f850de575677b8bcf7a91bb36d4204de4aeb92f238",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved detailed consumer/section/checklist guidance as retained reference; specialized writer/schema remains pending, private implementation examples removed. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/documentation-standards/test-plan.md",
+      "target_path": "governance/artifacts/documentation-standards/test-plan.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fad2852c395a1014b1da23774b01113f7da2d9a5b7e19e3fc8543a15c64941f8",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved detailed consumer/section/checklist guidance as retained reference; specialized writer/schema remains pending, private implementation examples removed. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/documentation-standards/bi-requirements.md",
+      "target_path": "governance/artifacts/documentation-standards/bi-requirements.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "2a37b7259f67d9d201c459be31009f72847eab9eb9859a2360cd331aeeb5fbbb",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved detailed consumer/section/checklist guidance as retained reference; specialized writer/schema remains pending, private implementation examples removed. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/documentation-standards/dependencies.md",
+      "target_path": "governance/artifacts/documentation-standards/dependencies.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "b67b90a7fdf0ba4aa7200fab5ff252d4aea761c8e062338fac24b3bd861db374",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved detailed consumer/section/checklist guidance as retained reference; specialized writer/schema remains pending, private implementation examples removed. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/reference-architecture/capabilities.md",
+      "target_path": "governance/reference-architecture/capabilities.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d0b4e3f4ba9e3b9d2b9012782cef8f0877ad11c04a345c67a91c41425b6107b9",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Retained capability decomposition, aligned preservation default and removed excluded products. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/skills/skill-metadata.md",
+      "target_path": "governance/skills/skill-metadata.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "101b4decb43bdb8d461d77550a8d5f5ead1fa4a3b6808819dd7b395aa8929dc9",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved original ownership metadata vocabulary and schema as reference; explicitly pending validation migration, no unsupported frontmatter requirement. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/skills/README.md",
+      "target_path": "governance/skills/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c4583765b3da42ce9c60493ec47ae300009c8df7aa3c0a5fe593dfe34011123f",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Corrected inherited claims of metadata enforcement and a nonexistent surface instruction file. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/onboarding/README.md",
+      "target_path": "governance/onboarding/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "634895b501fabb36ee8152bd8a43ce1bc94f6b8ff76ba7a0394766b50dcac062",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Restored teaching model and isolation/repair guardrails; original discipline fixtures and complete lifecycle explicitly pending. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/artifacts/README.md",
+      "target_path": "governance/artifacts/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "9611bb90401fbe77950335d3a800d456db656c8f0c0cf8ec969bc855087f91d1",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/README.md",
+      "target_path": "governance/quality/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "796a4742f04d52d6b90f392718a7ad8d7107db22e19cab7e745cede3dfc74b4f",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Removed links to uninstalled evaluation/fixture trees and described actual test location. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "skills-hub/README.md",
+      "target_path": "skills-hub/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fbaa83e86fc26420196f65140c5aa5b6d7229ab334952d801af184bf0d03790a",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Preserved current catalog and mechanics; restored source emoji headings, adoption explanation, package responsibility, review and onboarding navigation. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/gates/gate-catalog.md",
+      "target_path": "governance/quality/gates/gate-catalog.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "e9e3fdf56e67f34ba608345d6d2ea34473989889562a47bd0c040de7dedc494a",
+      "adaptation": "Restored substantive portable guidance after preservation audit; renamed the Brain, removed private examples and explicitly excluded products, and separated agent guidance from installed automation. Retained Decision operation matrix and workflow routing through named profiles; removed duplicated gate-set lists and excluded writers. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "README.md",
+      "target_path": "README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "ce65b31dc90de734e6884933484f511822b0579b65cea78d0d2a82935cc0280d",
+      "adaptation": "Preserved source title/navigation emojis and surface orientation. Adapted identity, private setup/site/planning routes and current capability status; added role/flow navigation and explicit incomplete migration state. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/lib/root-docs/validator.mjs",
+      "target_path": "scripts/lib/root-docs/validator.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "9d4aeb73577f96b248f44b375995660b2a6319acb4a0da594b9bee1c9eb6de30",
+      "adaptation": "Retained writer-independent document kinds, required sections, mapping checks and waivers. Neutral handoff heading; ignore fenced examples, reject empty sections, use current footnote API. No RFC authoring dependency. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/validate_root_docs.mjs",
+      "target_path": "scripts/validate_root_docs.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "66cf3a67de33b413c5d15b38d0fb092d1282848530b9fc8116ca3067533a9ad8",
+      "adaptation": "Retained changed/all/PR validation entrypoints, without source-specific authoring dependency. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/read_source.mjs",
+      "target_path": "scripts/read_source.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "8586e5ad3c51a4b45801d1bb12c542ce8a4f8ef4e1d3b3557131ec66086b6cbe",
+      "adaptation": "Retained self-logging pinned Git/URL reader and source identity checks; added line coverage, bounded fetch, strict arguments and visible recording failures. No source gateway. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/lib/source-evidence.mjs",
+      "target_path": "scripts/lib/source-evidence.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fc3de16f39ccdb9fc488bf6523e00835eaf93cbb65078f50f59eb14a738fc0cd",
+      "adaptation": "Preserved shared transport writer; log failures now surface as errors, optional actual coverage retained. Session data remains ignored and private. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/lib/hooks/session.mjs",
+      "target_path": "scripts/lib/hooks/session.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "3bc0ad0bc3ad778d32df84cde0d3844dd3c1f94d90c74c45ec5b6f8dfb863438",
+      "adaptation": "Retained evidence append/read contract only; private permissions, no symlink writes, strict corruption errors. No destructive session rotation or transcript snapshots. Evidence-only append storage, ignored local metadata, symlink protection and explicit errors; omitted private transcripts and session content."
+    },
+    {
+      "source_path": "scripts/__tests__/read-source.test.mjs",
+      "target_path": "scripts/__tests__/read-source.test.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "f8eea730d5231e5fb278adc962a483235aee24f8fade7869d525274f77ff10b3",
+      "adaptation": "Retained original source-reader regressions using fictional repositories, actual pinned local Git reads and stubbed remote resolution. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/agent-policy/brain-checkout-freshness.mjs",
+      "target_path": "scripts/agent-policy/brain-checkout-freshness.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "eae3e6ca72ed51c7f6dd980a50ec84c518752ebc22cb30c2d519fa9e30f35e8f",
+      "adaptation": "Retained live freshness check and conservative recent-fetch fallback, switched to origin/main, removed fixed company API, bound cache to remote identity; no mutation or auto-pull. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/__tests__/brain-freshness-gate.test.mjs",
+      "target_path": "scripts/__tests__/brain-freshness-gate.test.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "014b16a77b8ba2ac18b6cb900bd0e2b74f8db5a7a1e869868d11252dea30757d",
+      "adaptation": "Retained real local-remote freshness, stale/divergent branch, cache, refresh failure and command-selection regressions; neutral main target. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/lib/skill_symlinks.mjs",
+      "target_path": "scripts/lib/skill_symlinks.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "88466dfe62e61f4bc24a93f88f76dcc3f204167f92313f3e901a689ea182f915",
+      "adaptation": "Retained platform-stable relative discovery link calculation; removed excluded updater commentary. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/sync_skill_indexes.mjs",
+      "target_path": "scripts/sync_skill_indexes.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "408cf9741b5d19ba93d9071586070990a41a57132b982bdc6734ea4f791ffef8",
+      "adaptation": "Adapted sync to current canonical packages and Codex/Claude indexes; preview/check by default, refuse conflicting or custom entries rather than overwrite. Non-destructive synchronization of Codex and Claude links to one canonical source; validate all conflicts before creating links."
+    },
+    {
+      "source_path": "scripts/githooks/post-checkout",
+      "target_path": "scripts/githooks/post-checkout",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "fe889b90f22606f3c09674f749941d1b8f86751dbc8ec158bc5ace23720f7bb0",
+      "adaptation": "Retained source post-checkout behavior through exclusive non-overwriting role helper. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/quality-incidents.md",
+      "target_path": "governance/quality/quality-incidents.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d8e2870d37ec2645dd6d5cbee33c980e4c43c8e08ce9d5a82c74c20f40d34134",
+      "adaptation": "Preserved incident triggers, shape, learning actions and storage; removed all private incidents and obsolete source date rule; added advisory repair verification mount. Preserved reusable triggers, intake shape and repair loop; removed every private incident entry; added advisory repair review."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/ambiguous-owner-one-question.md",
+      "target_path": "governance/quality/fixtures/interaction/ambiguous-owner-one-question.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "60b356b34c2a6c663f06482aefce99d73fa7d76ba896d97355a331077b2b0a2d",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/blocked-source-keeps-conclusion-provisional.md",
+      "target_path": "governance/quality/fixtures/interaction/blocked-source-keeps-conclusion-provisional.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "9b679eb5c2d72f59323fcaceea678e40e37a6b788abe8f865a8e6b97a58aacae",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/durable-rule-stops-for-decision.md",
+      "target_path": "governance/quality/fixtures/interaction/durable-rule-stops-for-decision.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "3f23583d301ac7023679bff62472ac3850873b0b2ee092ad43f55e60b5c5e536",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/false-reviewed-source-claim-is-repaired.md",
+      "target_path": "governance/quality/fixtures/interaction/false-reviewed-source-claim-is-repaired.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "541feb80fed436c00626d2b8926fa6307894eb7ad760697019851d91ed229502",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/grounded-recommendation-closes-alternative.md",
+      "target_path": "governance/quality/fixtures/interaction/grounded-recommendation-closes-alternative.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "8f4de7b21dfbc1e6c0d096978959f086482ed9e6405da65980abd7de19ce65da",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/linked-design-source-stays-unread.md",
+      "target_path": "governance/quality/fixtures/interaction/linked-design-source-stays-unread.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "f085ad70c27f4b051cf96ad9131f841cdcdfa3a979fe8ed1239d9b64c8aefbda",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/lossy-rewrite-asks-first.md",
+      "target_path": "governance/quality/fixtures/interaction/lossy-rewrite-asks-first.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "440941a25ec9dc637fdcf67f2bcacdcc21804f7df891a9dce5bd6be773951bc9",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/passive-authoring-option-set.md",
+      "target_path": "governance/quality/fixtures/interaction/passive-authoring-option-set.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "3916f86e44f18bb0ed9589e37ca1359652d1c28f60aeb512bcbb76d37d0faa2e",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/read-design-does-not-decide-architecture.md",
+      "target_path": "governance/quality/fixtures/interaction/read-design-does-not-decide-architecture.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "b902077a641a2375ddd613d0d368aa1713f2bfc265ea3e3476e38ed84a552020",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/reader-clarity-review-prevents-restatement.md",
+      "target_path": "governance/quality/fixtures/interaction/reader-clarity-review-prevents-restatement.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d67ef5a4c604a5b1219b65499e8f47f0343fc0bab9bd3245c0c05ebbd63f3593",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/resolved-question-routes-by-authority.md",
+      "target_path": "governance/quality/fixtures/interaction/resolved-question-routes-by-authority.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "d4728045b08277edef32710511553c75f3916050b1f9b504c6a572e59f4305f4",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/solution-frame-challenges-build-request.md",
+      "target_path": "governance/quality/fixtures/interaction/solution-frame-challenges-build-request.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "7bd150e1bfd971859070312231c8d2a087141659631823289507519230f68aaf",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/fixtures/interaction/solution-frame-fast-path.md",
+      "target_path": "governance/quality/fixtures/interaction/solution-frame-fast-path.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c711f8ce2d871095a7657544f2082108106ee9adadf15b464539d08df90d0a92",
+      "adaptation": "Preserved synthetic interaction scenario and positive/negative expectations; neutralized source organization and human dates. No private records. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/evals/interaction/cases.json",
+      "target_path": "governance/quality/evals/interaction/cases.json",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "430b9e579cce8c995713f1673398bd3cee0476e327f69f250c347fd3b7690855",
+      "adaptation": "Retained generic interaction cases; excluded planning, CK composition and dedicated downstream authoring. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/evals/interaction/inputs.json",
+      "target_path": "governance/quality/evals/interaction/inputs.json",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "a50c3517c629e59eed61857d935a5d699f8bd90cf56bb35517e93d463fccd75a",
+      "adaptation": "Preserved synthetic inputs, required reads and write boundaries for retained interaction cases; neutral dates/source identity. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": ".claude/settings.json",
+      "target_path": ".claude/settings.json",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c2663b51c110a02a5e5d0ecef2ddd875b0006b36455fbeed6ef17c5a18ba5013",
+      "adaptation": "Adapted reviewed generic source mechanics or guidance to current local contracts; no private product/data or credential migration. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": ".gitignore",
+      "target_path": ".gitignore",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "c73be4c6055792733f9bfce521c3f5e5c4062c4158ce480bc638b543c28bacdf",
+      "adaptation": "Adapted reviewed generic source mechanics or guidance to current local contracts; no private product/data or credential migration. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "governance/quality/evals/README.md",
+      "target_path": "governance/quality/evals/README.md",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "45909506b3134985186a23eed779f0e67e9a3d0b417c23cdff42b7973554367f",
+      "adaptation": "Adapted reviewed generic source mechanics or guidance to current local contracts; no private product/data or credential migration. Gap increment: restored consumer links, current implementation status or regression coverage; preserved existing source substance and explicit exclusions."
+    },
+    {
+      "source_path": "scripts/evals/run.mjs",
+      "target_path": "scripts/evals/run.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "cd93950c8874b2cb7cd65231c84743279ee403c0106149de9c71bb2eea0cc783",
+      "adaptation": "Replaced private evaluation backend with portable existing-host CLI trials, isolated synthetic workspace, protected-write comparison and explicitly ungraded outputs; no private backend dependency."
+    },
+    {
+      "source_path": "scripts/hooks/evidence-observer.mjs",
+      "target_path": "scripts/hooks/evidence-observer.mjs",
+      "source_commit": "692907b0c148da2df0f69daaa21bc988d23ab946",
+      "source_sha256": "4417d7381cdae70ba5878a37f76af9926ef0e12582302360f25c276215e588a6",
+      "adaptation": "Adapted transport metadata observer; ambiguous results unknown, unmapped connectors record explicit tool-level gaps, secret query fields removed, root binding and session scope. No source bodies retained."
+    }
+  ],
+  "reviewed": "02.11.2026",
+  "authored_files": [
+    {
+      "target_path": "governance/operations/agent-hooks.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "governance/quality/document-review.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "governance/quality/evidence/access-records.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "governance/reference-architecture/how-brain-works.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/README.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/gap-implementation-plan.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/preservation-audit.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/scope.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/tasks.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/__tests__/evidence-recording.test.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/__tests__/repository.test.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/__tests__/restored-documents.test.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/__tests__/restored-helpers.test.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/check_quality_incidents.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/install-agent-hooks.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/install-git-hooks.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/propagate-local-role.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "scripts/validate_surfaces.mjs",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/README.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/brief.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/decision.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/delivery.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/feature.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/lesson.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "skills-hub/hb-skills/hb-onboard/references/lifecycle/source.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/gap-review.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
+    },
+    {
+      "target_path": "projects-in-progress/agentic-brain/t2-mechanics.md",
+      "purpose": "New portable implementation, regression, documentation or fictional training material for the accepted gap increment; not copied source data."
     }
   ]
 }

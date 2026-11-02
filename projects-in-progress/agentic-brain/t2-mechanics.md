@@ -1,5 +1,9 @@
 # T2 mechanics and verification
 
+Current update, 02.11.2026: [gap increment review](gap-review.md) supersedes the
+implementation-absence statements in this earlier snapshot. Retain the earlier
+record for migration history; use the review for current coverage and blockers.
+
 Inspected and exercised on 30.10.2026. This is an implementation inventory, not
 approval to drop unported source mechanics. Source provenance is in
 [extraction.json](extraction.json); the accepted boundary remains [scope](scope.md).
