@@ -6,7 +6,7 @@ decisions, roles, flows, reusable workflows and explicit ownership.
 
 Follow the presentation for more details, if you want.
 
-https://github.com/zonzujiro/agentic-brain-deck
+https://zonzujiro.github.io/agentic-brain-deck
 
 ## Current state
 
